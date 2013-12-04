@@ -1,0 +1,28 @@
+SMAP
+ControllerLib.java
+egl
+*S egl
+*F
++ 1 ControllerLib.egl
+com/pku/ss/egl/libs/ControllerLib.egl
+*L
+8#1:39,3
+7#1:42
+13#1:44
+12#1:45
+16#1:47
+15#1:48
+19#1:50
+18#1:51
+22#1:53
+21#1:54
+*E
+6#1;sc;sc;com.pku.ss.egl.et.SoundControl
+11#1;hk;hk;com.pku.ss.egl.et.HotKeys
+7#1;F:setVolume;setVolume;(I)V
+7#1;value;value;eglx.lang.EInt
+12#1;F:left;left;()V
+15#1;F:right;right;()V
+18#1;F:backwardCmd;backwardCmd;()V
+21#1;F:forwardCmd;forwardCmd;()V
+*X

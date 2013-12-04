@@ -1,0 +1,1 @@
+define([],function(){egl.defineClass("dojo.widgets","DojoDiagnostics",{});});

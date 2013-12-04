@@ -1,0 +1,1 @@
+egl.createRuntimeExceptionArgs=function(_1,_2){if(typeof (_2)!="string"){_2=egl.getRuntimeMessage(_1,_2);}egl.exceptionThrown=true;var _3=new Array();_3.push(["messageID",_1||""]);_3.push(["message",_2||""]);return _3;};egl.createRuntimeException=function(_4,_5){return new egl.eglx.lang.AnyException(egl.createRuntimeExceptionArgs(_4,_5));};

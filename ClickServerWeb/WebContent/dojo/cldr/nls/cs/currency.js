@@ -1,0 +1,1 @@
+define({"HKD_displayName":"Dolar hongkongsk\xfd","CHF_displayName":"Frank \u0161v\xfdcarsk\xfd","CAD_displayName":"Dolar kanadsk\xfd","CNY_displayName":"Juan renminbi","AUD_displayName":"Dolar australsk\xfd","JPY_displayName":"Jen","USD_displayName":"Dolar americk\xfd","GBP_displayName":"Libra \u0161terlink\u016f","EUR_displayName":"Euro"});

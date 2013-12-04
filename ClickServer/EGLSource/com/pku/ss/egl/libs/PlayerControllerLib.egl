@@ -1,0 +1,35 @@
+package com.pku.ss.egl.libs;
+
+import com.pku.ss.egl.et.*;
+// basic library
+
+library PlayerControllerLib
+
+    private p Player{};
+
+//    function GetPath()
+//        syslib.writeStdout(p.getPath());
+//    end
+
+    //    function GetPlayer()
+    //        player.getInstance();
+    //    end
+    
+    function PlayMusic()
+        try
+            p.playMusic();
+        onException(e AnyException)
+            syslib.writeStderr(e.messageID);
+            syslib.writeStderr(e.message);
+        end
+
+    end
+
+    function PlayVideo()
+        try
+            p.playVideo();
+        onException(e AnyException)
+            syslib.writeStderr(e.message);
+        end
+    end
+end

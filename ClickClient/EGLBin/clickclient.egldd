@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egl:deployment xmlns:egl="http://www.eclipse.org/xmlns/edt/deployment/1.0">
+  <bindings>
+    <binding name="RunCmdService" type=" edt.binding.rest" uri="http://192.168.1.105:8080/ClickServerWeb/restservices/RunCmdService" useURI="true">
+      <parameters>
+        <parameter name="enableGeneration" value="true"/>
+      </parameters>
+    </binding>
+  </bindings>
+  <ruiapplication deployAllHandlers="true">
+    <ruihandler enableGeneration="true" implementation="client.Home">
+      <parameters>
+        <parameter name="html_file_name" value="Home"/>
+      </parameters>
+    </ruihandler>
+    <parameters>
+      <parameter name="locales" value="zh_CN,Chinese - Simplified,zh"/>
+    </parameters>
+  </ruiapplication>
+  <egl:target.project name="ClickClientWeb"/>
+</egl:deployment>

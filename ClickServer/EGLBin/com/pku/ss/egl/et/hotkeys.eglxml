@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ExternalType ID="1" eClass="org.eclipse.edt.mof.egl.ExternalType" name="HotKeys" fileName="com/pku/ss/egl/et/HotKeys.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.et" isAbstract="false" >
+	<annotations ID="2" eClass="egl:eglx.java.javaobject" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:338" off="i:29" line="i:4" />
+	<superTypes href="egl:eglx.java.object"/>
+	<constructors ID="4" eClass="org.eclipse.edt.mof.egl.Constructor" name="constructor" type="egl:com.pku.ss.egl.et.hotkeys" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:71" line="i:6" />
+		<container IDREF="1"/>
+	</constructors>
+	<functions ID="6" eClass="org.eclipse.edt.mof.egl.Function" name="backward" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="7" eClass="egl:eglx.lang.throws" />
+		<annotations ID="8" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:36" off="i:91" line="i:8" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="9" eClass="org.eclipse.edt.mof.egl.Function" name="esc" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="10" eClass="egl:eglx.lang.throws" />
+		<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:31" off="i:133" line="i:10" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="12" eClass="org.eclipse.edt.mof.egl.Function" name="_forward" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="13" eClass="egl:eglx.lang.externalname" value="forward" />
+		<annotations ID="14" eClass="egl:eglx.lang.throws" />
+		<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:62" off="i:170" line="i:12" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="16" eClass="org.eclipse.edt.mof.egl.Function" name="getInstance" type="egl:com.pku.ss.egl.et.hotkeys" isNullable="true" isStatic="true" isAbstract="false" >
+		<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:48" off="i:238" line="i:14" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="18" eClass="org.eclipse.edt.mof.egl.Function" name="left" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="19" eClass="egl:eglx.lang.throws" />
+		<annotations ID="20" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:292" line="i:16" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="21" eClass="org.eclipse.edt.mof.egl.Function" name="right" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="22" eClass="egl:eglx.lang.throws" />
+		<annotations ID="23" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:33" off="i:330" line="i:18" />
+		<container IDREF="1"/>
+	</functions>
+</ExternalType>

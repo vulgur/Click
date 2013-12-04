@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Program ID="1" eClass="org.eclipse.edt.mof.egl.Program" name="TestMusic" fileName="com/pku/ss/egl/prog/TestMusic.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.prog" isAbstract="false" isCallable="false" >
+	<annotations ID="2" eClass="egl:eglx.lang.basicprogram" unloadOnExit="false" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:181" off="i:75" line="i:5" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="4" eClass="org.eclipse.edt.mof.egl.Function" name="main" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:153" off="i:97" line="i:7" />
+		<container IDREF="1"/>
+		<statementBlock ID="6" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="4"/>
+		</statementBlock>
+	</functions>
+</Program>

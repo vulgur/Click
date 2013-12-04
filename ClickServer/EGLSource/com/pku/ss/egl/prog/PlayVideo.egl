@@ -1,0 +1,12 @@
+package com.pku.ss.egl.prog;
+
+// program
+//
+
+program PlayVideo
+
+    function main()
+        syslib.startCmd("video\\Rolling In The Deep.MP4");
+    end
+
+end

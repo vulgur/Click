@@ -1,0 +1,15 @@
+package com.pku.ss.egl.libs;
+import com.pku.ss.egl.et.*;
+// basic library
+library MonitorControllerLib
+	
+    private monitor Monitor{};
+
+    function openMonitor()
+        monitor.openMonitor();
+    end
+	
+	function closeMonitor()
+		monitor.closeMonitor();
+	end
+end

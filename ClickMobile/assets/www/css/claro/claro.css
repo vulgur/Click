@@ -1,0 +1,234 @@
+/*******************************************************************************
+ * Copyright � 2011 IBM Corporation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ * IBM Corporation - initial API and implementation
+ *
+ *******************************************************************************/
+body, input, label, select, textarea, button, fieldset, legend {
+    color: #131313;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;    
+}
+/**** Remove the firefox button inner padding ******/
+input::-moz-focus-inner, button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+/************** DataGrid ****************/
+
+.claro .EglRuiDataGrid {
+	outline: medium none;	
+}
+
+.claro .EglRuiDataGridTable {
+	border-width: 0;
+}
+
+.claro .EglRuiDataGridHeaderRow {
+	background:url("images/row_back.png") #FFF repeat-x;
+	_background: #FFF;
+	cursor: default;
+}
+
+.claro .EglRuiDataGridHeaderRow, .claro .EglRuiDataGridHeaderRowInner {
+	background-color: #FFF;
+}
+
+.claro .EglRuiDataGridHeaderCell:hover {
+	background: url("images/header.png") repeat-x scroll center top #9DCFFF;
+	_background: #9DCFFF;
+	border-bottom-color: #FEBE47;
+}
+
+.claro .EglRuiDataGridHeaderCell {
+	border-color:#BCBCBC #BCBCBC transparent transparent;
+	border-style:solid;
+	border-width:1px 1px 0 0;
+	font-weight: normal;	
+	background:url("images/header_shadow.png") #E5EDF4 repeat-x bottom;
+	_background:#E5EDF4;
+}
+
+.claro .EglRuiDataGridRows {
+	border-top: #BCBCBC 1px solid;
+}
+
+.claro .EglRuiDataGridHeaderLabel {	
+	text-decoration:none;
+	white-space: nowrap;
+}
+
+.claro .EglRuiDataGridCell {
+	border-color: #F8F7F1;
+}
+
+.claro .EglRuiDataGridOddRow:hover, .claro .EglRuiDataGridEvenRow:hover,.claro .EglRuiDataGridRowSelected:hover  {
+	background-color: #ABD6FF;
+	border-bottom-color:#D3E9FB;
+	border-top-color:#D3E9FB;
+}
+
+.claro .EglRuiDataGridOddRow, .claro .EglRuiDataGridEvenRow{
+	background: url("images/row_back.png") repeat-x scroll 0 0 #FFF;	
+	_background: #FFF;	
+}
+.claro .EglRuiDataGridOddRow{
+	background-color: #FFFDF3;
+}
+
+.claro .EglRuiDataGridRowSelected {
+	background-color: #D3E9FB;
+}
+
+/************** General ****************/
+.claro .EglRuiInput, .claro .EglRuiSpan, .claro .EglRuiRadioGroupOptionName{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.claro .EglRuiTextField:hover,.claro .EglRuiCombo:hover,.claro .EglRuiTextArea:hover,.claro .EglRuiTextAreaRead:hover,.claro .EglRuiPasswordTextField:hover {
+	border-color: #769DC0;
+ 	-webkit-transition-duration:.25s;
+ 	background-color: #E9F4FE;
+	background-image: url(images/textBox_back.png);
+	_background: #E9F4FE;
+	background-repeat: repeat-x;
+}
+
+.claro .EglRuiTextField:focus,.claro .EglRuiCombo:focus,.claro .EglRuiTextArea:focus,.claro .EglRuiTextAreaRead:focus,.claro .EglRuiPasswordTextField:focus {
+	background-color: #FFF;
+	background-image: url(images/textBox_back.png);
+	_background: #FFF;
+	background-repeat: repeat-x;	
+}
+
+.claro .EglRuiTextField, .claro .EglRuiTextFieldReadOnly,.claro .EglRuiCombo,.claro .EglRuiTextArea,.claro .EglRuiTextAreaRead,.claro .EglRuiTextAreaReadOnly,.claro .EglRuiPasswordTextField,.claro .EglRuiPasswordTextFieldReadOnly {
+	border: 1px solid #B5BCC7;
+	padding:1px 2px 1px 0;
+	background-color: #FFF;
+	display:inline-block;
+}
+
+.claro .EglRuiTextFieldReadOnly,.claro .EglRuiTextAreaReadOnly,.claro .EglRuiPasswordTextFieldReadOnly {
+	cursor: default;
+	color: gray;
+	-moz-user-input:none;
+}
+
+.claro *[disabled].EglRuiTextField, .claro *[disabled].EglRuiTextFieldReadOnly,.claro *[disabled].EglRuiTextArea, 
+.claro *[disabled].EglRuiTextAreaReadOnly,.claro *[disabled].EglRuiPasswordTextFieldReadOnly,.claro *[disabled].EglRuiPasswordTextField, 
+.claro *[disabled].EglRuiCombo, .claro *[disabled].EglRuiCombo option,.claro *[disabled].EglRuiCheckBox, .claro *[disabled].EglRuiList .EglRuiOption {
+	background-color:#EFEFEF;
+	background-image:none;
+	color:#818181;
+	border-color:#D3D3D3;
+	cursor: default;
+}
+
+/************** TextField **********************/
+.claro .EglRuiTextField,.claro .EglRuiTextFieldReadOnly, .claro .EglRuiPasswordTextField, .claro .EglRuiPasswordTextFieldReadOnly{
+	width: 161px;
+	height: 17px;
+	padding: 0 2px;
+}
+
+/************** TextArea ***********************/
+.claro .EglRuiTextArea, .claro .EglRuiTextAreaReadOnly{
+	padding: 2px;
+	overflow: auto;
+}
+
+/************** Combo ***********************/
+.claro .EglRuiCombo{
+	width: 15em;
+	width: \0;
+}
+
+/************** RadioGroup ***********************/
+.claro .EglRuiRadioGroup .EglRuiInput{
+	width: 15px;
+	height: 15px;
+	margin-right: 2px;
+}
+
+/************** Checkbox  *******************/
+.claro .EglRuiCheckBox input{
+	width: 16px;
+	height: 16px;
+	margin-right: 2px;
+	vertical-align:top;
+}
+.claro .EglRuiCheckBox span{
+	/*vertical-align: top;*/
+}
+.claro *[disabled].EglRuiCheckBox{
+	background-color:transparent;	
+}
+
+/************** Button  *******************/
+.claro .EglRuiButton:hover{
+	background-color: #AFD9FF;
+	color:#000;
+ 	-webkit-transition-duration:.2s;
+}
+
+.claro .EglRuiButton:active{
+	-moz-box-shadow:0 0 0 transparent;
+	background-color:#99CFFF;
+}
+
+.claro .EglRuiButton, .claro .EglRuiButton:hover, .claro .EglRuiButton:active{
+	margin: 0.2em;
+	display:inline-block;
+	-moz-border-radius:4px 4px 4px 4px;
+	-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.15);
+	background-color:#E4F2FF;
+	background-image:url("images/button.png") !important;
+	_background: #E4F2FF;
+	background-position:center top;
+	background-repeat:repeat-x;
+	border:1px solid #769DC0;
+	_width: 1;
+	padding:2px 8px 5px 7px;
+	*padding: 1px 0 2px;
+	_padding: 2px 6px 3px;
+	_overflow: visible;
+	line-height:normal;
+	text-align:center;
+	vertical-align:middle;
+	white-space:nowrap;
+	cursor: pointer;
+	border-bottom-left-radius: 4px 4px;
+	border-bottom-right-radius: 4px 4px;
+	border-top-left-radius: 4px 4px;
+	border-top-right-radius: 4px 4px;
+}
+
+.claro *[disabled].EglRuiButton{
+	outline:medium none;
+	cursor: default;
+	-moz-box-shadow:0 0 0 transparent;
+	background-color:#EFEFEF;
+	background-position:0 -149px;
+	border:1px solid #C9C9C9;
+	color:#7F7F7F;
+}
+
+/*********** Combo ************************/
+.claro .EglRuiOption:hover{
+	background-color: #E9F4FE;
+}
+
+.claro .EglRuiOption{
+
+}
+/********** 75727 The textbox of combo, currency is not expanded in IE7 ***********/
+.claro .dijitTextBox {
+	*position : relative;
+}

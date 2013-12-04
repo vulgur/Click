@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egldd>
+    <bindings>
+        <binding name="RunCmdService" type=" edt.binding.rest" uri="http://192.168.1.105:8080/ClickServerWeb/restservices/RunCmdService" useURI="true">
+            <parameters>
+                <parameter name="enableGeneration" value="true"/>
+            </parameters>
+        </binding>
+    </bindings>
+    <includes>
+    </includes>
+</egldd>

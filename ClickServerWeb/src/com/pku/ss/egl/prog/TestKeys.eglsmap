@@ -1,0 +1,15 @@
+SMAP
+TestKeys.java
+egl
+*S egl
+*F
++ 1 TestKeys.egl
+com/pku/ss/egl/prog/TestKeys.egl
+*L
+9#1:37
+10#1:38
+8#1:39
+*E
+*L;com.pku.ss.egl.libs.HotKeysControllerLib;eze_Lib_com_pku_ss_egl_libs_HotKeysControllerLib
+8#1;F:main;main;()V
+*X

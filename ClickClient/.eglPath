@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eglpath>
+	<eglpathentry kind="src" path="EGLSource"/>
+	<eglpathentry kind="con" path="org.eclipse.edt.compiler.EDT_RUNTIME"/>
+	<eglpathentry kind="src" path="/org.eclipse.edt.rui.widgets_0.8.1"/>
+	<eglpathentry kind="src" path="/org.eclipse.edt.rui.dojo.mobile.widgets_0.8.1"/>
+	<eglpathentry path="EGLBin" kind="output"/>
+</eglpath>

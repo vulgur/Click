@@ -1,0 +1,498 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Service ID="1" eClass="org.eclipse.edt.mof.egl.Service" name="RunCmdService" fileName="com/pku/ss/egl/server/RunCmdService.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.server" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2196" off="i:74" line="i:6" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.egl.Function" name="playMusic" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:152" off="i:101" line="i:8" />
+		<container IDREF="1"/>
+		<statementBlock ID="5" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+			<statements ID="6" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:168" line="i:10" />
+				<container IDREF="3"/>
+				<expr ID="8" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="PlayMusic" >
+					<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:31" off="i:168" line="i:10" />
+					<qualifier ID="10" eClass="org.eclipse.edt.mof.egl.PartName" id="PlayerControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:168" line="i:10" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="12" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="13" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:36" off="i:209" line="i:11" />
+				<container IDREF="3"/>
+				<expr ID="14" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:209" line="i:11" />
+					<arguments ID="16" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="playing music" isHex="false" >
+						<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:15" off="i:228" line="i:11" />
+					</arguments>
+					<qualifier ID="18" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:209" line="i:11" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="20" eClass="org.eclipse.edt.mof.egl.Function" name="playVideo" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:114" off="i:259" line="i:14" />
+		<container IDREF="1"/>
+		<statementBlock ID="22" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="20"/>
+			<statements ID="23" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="24" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:288" line="i:15" />
+				<container IDREF="20"/>
+				<expr ID="25" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="PlayVideo" >
+					<annotations ID="26" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:31" off="i:288" line="i:15" />
+					<qualifier ID="27" eClass="org.eclipse.edt.mof.egl.PartName" id="PlayerControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="28" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:288" line="i:15" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="29" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="30" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:36" off="i:329" line="i:16" />
+				<container IDREF="20"/>
+				<expr ID="31" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="32" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:329" line="i:16" />
+					<arguments ID="33" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="playing video" isHex="false" >
+						<annotations ID="34" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:15" off="i:348" line="i:16" />
+					</arguments>
+					<qualifier ID="35" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="36" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:329" line="i:16" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="37" eClass="org.eclipse.edt.mof.egl.Function" name="switchDisplay" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="38" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:302" off="i:379" line="i:19" />
+		<container IDREF="1"/>
+		<parameters ID="39" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="value" type="egl:eglx.lang.eboolean" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_IN" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="40" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:16" off="i:402" line="i:19" />
+			<container IDREF="37"/>
+		</parameters>
+		<statementBlock ID="41" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="37"/>
+			<statements ID="42" eClass="org.eclipse.edt.mof.egl.IfStatement" >
+				<annotations ID="43" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:245" off="i:428" line="i:20" />
+				<container IDREF="37"/>
+				<condition ID="44" eClass="org.eclipse.edt.mof.egl.BinaryExpression" operator="==" >
+					<annotations ID="45" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:431" line="i:20" />
+					<operands ID="46" eClass="org.eclipse.edt.mof.egl.MemberName" id="value" >
+						<annotations ID="47" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:5" off="i:431" line="i:20" />
+						<member IDREF="39"/>
+					</operands>
+					<operands ID="48" eClass="org.eclipse.edt.mof.egl.BooleanLiteral" value="yes" >
+						<annotations ID="49" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:4" off="i:440" line="i:20" />
+					</operands>
+				</condition>
+				<trueBranch ID="50" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="51" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:245" off="i:428" line="i:20" />
+					<container IDREF="37"/>
+					<statements ID="52" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="53" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:458" line="i:21" />
+						<container IDREF="37"/>
+						<expr ID="54" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="openMonitor" >
+							<annotations ID="55" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:34" off="i:458" line="i:21" />
+							<qualifier ID="56" eClass="org.eclipse.edt.mof.egl.PartName" id="MonitorControllerLib" packageName="com.pku.ss.egl.libs" >
+								<annotations ID="57" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:458" line="i:21" />
+							</qualifier>
+						</expr>
+					</statements>
+					<statements ID="58" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="59" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:40" off="i:506" line="i:22" />
+						<container IDREF="37"/>
+						<expr ID="60" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+							<annotations ID="61" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:39" off="i:506" line="i:22" />
+							<arguments ID="62" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Display is opened" isHex="false" >
+								<annotations ID="63" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:19" off="i:525" line="i:22" />
+							</arguments>
+							<qualifier ID="64" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="65" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:506" line="i:22" />
+							</qualifier>
+						</expr>
+					</statements>
+				</trueBranch>
+				<falseBranch ID="66" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="67" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:245" off="i:428" line="i:20" />
+					<container IDREF="37"/>
+					<statements ID="68" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="69" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:36" off="i:572" line="i:24" />
+						<container IDREF="37"/>
+						<expr ID="70" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="closeMonitor" >
+							<annotations ID="71" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:572" line="i:24" />
+							<qualifier ID="72" eClass="org.eclipse.edt.mof.egl.PartName" id="MonitorControllerLib" packageName="com.pku.ss.egl.libs" >
+								<annotations ID="73" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:33" off="i:572" line="i:24" />
+							</qualifier>
+						</expr>
+					</statements>
+					<statements ID="74" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="75" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:40" off="i:621" line="i:25" />
+						<container IDREF="37"/>
+						<expr ID="76" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+							<annotations ID="77" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:39" off="i:621" line="i:25" />
+							<arguments ID="78" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Display is closed" isHex="false" >
+								<annotations ID="79" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:19" off="i:640" line="i:25" />
+							</arguments>
+							<qualifier ID="80" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="81" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:621" line="i:25" />
+							</qualifier>
+						</expr>
+					</statements>
+				</falseBranch>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="82" eClass="org.eclipse.edt.mof.egl.Function" name="changeVolume" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="83" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:138" off="i:687" line="i:29" />
+		<container IDREF="1"/>
+		<parameters ID="84" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="value" type="egl:eglx.lang.eint" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_IN" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="85" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:12" off="i:709" line="i:29" />
+			<container IDREF="82"/>
+		</parameters>
+		<statementBlock ID="86" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="82"/>
+			<statements ID="87" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="88" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:36" off="i:731" line="i:30" />
+				<container IDREF="82"/>
+				<expr ID="89" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="setVolume" >
+					<annotations ID="90" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:731" line="i:30" />
+					<arguments ID="91" eClass="org.eclipse.edt.mof.egl.MemberName" id="value" >
+						<annotations ID="92" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:5" off="i:760" line="i:30" />
+						<member IDREF="84"/>
+					</arguments>
+					<qualifier ID="93" eClass="org.eclipse.edt.mof.egl.PartName" id="SoundControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="94" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:28" off="i:731" line="i:30" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="95" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="96" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:41" off="i:776" line="i:31" />
+				<container IDREF="82"/>
+				<expr ID="97" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="98" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:40" off="i:776" line="i:31" />
+					<arguments ID="99" eClass="org.eclipse.edt.mof.egl.BinaryExpression" operator="+" >
+						<annotations ID="100" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:20" off="i:795" line="i:31" />
+						<operands ID="101" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="volume is " isHex="false" >
+							<annotations ID="102" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:12" off="i:795" line="i:31" />
+						</operands>
+						<operands ID="103" eClass="org.eclipse.edt.mof.egl.MemberName" id="value" >
+							<annotations ID="104" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:5" off="i:810" line="i:31" />
+							<member IDREF="84"/>
+						</operands>
+					</arguments>
+					<qualifier ID="105" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="106" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:776" line="i:31" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="107" eClass="org.eclipse.edt.mof.egl.Function" name="left" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="108" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:111" off="i:831" line="i:34" />
+		<container IDREF="1"/>
+		<statementBlock ID="109" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="107"/>
+			<statements ID="110" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="111" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:28" off="i:855" line="i:35" />
+				<container IDREF="107"/>
+				<expr ID="112" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="left" >
+					<annotations ID="113" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:27" off="i:855" line="i:35" />
+					<qualifier ID="114" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeysControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="115" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:25" off="i:855" line="i:35" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="116" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="117" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:42" off="i:892" line="i:36" />
+				<container IDREF="107"/>
+				<expr ID="118" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="119" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:41" off="i:892" line="i:36" />
+					<arguments ID="120" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="left key is pressed" isHex="false" >
+						<annotations ID="121" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:21" off="i:911" line="i:36" />
+					</arguments>
+					<qualifier ID="122" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="123" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:892" line="i:36" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="124" eClass="org.eclipse.edt.mof.egl.Function" name="right" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="125" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:114" off="i:948" line="i:39" />
+		<container IDREF="1"/>
+		<statementBlock ID="126" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="124"/>
+			<statements ID="127" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="128" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:973" line="i:40" />
+				<container IDREF="124"/>
+				<expr ID="129" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="right" >
+					<annotations ID="130" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:28" off="i:973" line="i:40" />
+					<qualifier ID="131" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeysControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="132" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:26" off="i:973" line="i:40" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="133" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="134" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:43" off="i:1011" line="i:41" />
+				<container IDREF="124"/>
+				<expr ID="135" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="136" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:42" off="i:1011" line="i:41" />
+					<arguments ID="137" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="right key is pressed" isHex="false" >
+						<annotations ID="138" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:22" off="i:1030" line="i:41" />
+					</arguments>
+					<qualifier ID="139" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="140" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1011" line="i:41" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="141" eClass="org.eclipse.edt.mof.egl.Function" name="backwardCmd" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="142" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:125" off="i:1068" line="i:44" />
+		<container IDREF="1"/>
+		<statementBlock ID="143" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="141"/>
+			<statements ID="144" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="145" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:1099" line="i:45" />
+				<container IDREF="141"/>
+				<expr ID="146" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="backwardCmd" >
+					<annotations ID="147" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:34" off="i:1099" line="i:45" />
+					<qualifier ID="148" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeysControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="149" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:1099" line="i:45" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="150" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="151" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:42" off="i:1143" line="i:46" />
+				<container IDREF="141"/>
+				<expr ID="152" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="153" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:41" off="i:1143" line="i:46" />
+					<arguments ID="154" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="backward is invoked" isHex="false" >
+						<annotations ID="155" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:21" off="i:1162" line="i:46" />
+					</arguments>
+					<qualifier ID="156" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="157" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1143" line="i:46" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="158" eClass="org.eclipse.edt.mof.egl.Function" name="forwardCmd" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="159" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:122" off="i:1199" line="i:49" />
+		<container IDREF="1"/>
+		<statementBlock ID="160" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="158"/>
+			<statements ID="161" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="162" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:34" off="i:1229" line="i:50" />
+				<container IDREF="158"/>
+				<expr ID="163" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="forwardCmd" >
+					<annotations ID="164" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:33" off="i:1229" line="i:50" />
+					<qualifier ID="165" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeysControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="166" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:31" off="i:1229" line="i:50" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="167" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="168" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:41" off="i:1272" line="i:51" />
+				<container IDREF="158"/>
+				<expr ID="169" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="170" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:40" off="i:1272" line="i:51" />
+					<arguments ID="171" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="forward is invoked" isHex="false" >
+						<annotations ID="172" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:20" off="i:1291" line="i:51" />
+					</arguments>
+					<qualifier ID="173" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="174" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1272" line="i:51" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="175" eClass="org.eclipse.edt.mof.egl.Function" name="sleep" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="176" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:105" off="i:1327" line="i:54" />
+		<container IDREF="1"/>
+		<statementBlock ID="177" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="175"/>
+			<statements ID="178" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="179" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:26" off="i:1352" line="i:55" />
+				<container IDREF="175"/>
+				<expr ID="180" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="sleep" >
+					<annotations ID="181" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:25" off="i:1352" line="i:55" />
+					<qualifier ID="182" eClass="org.eclipse.edt.mof.egl.PartName" id="BootControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="183" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:23" off="i:1352" line="i:55" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="184" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="185" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:37" off="i:1387" line="i:56" />
+				<container IDREF="175"/>
+				<expr ID="186" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="187" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:36" off="i:1387" line="i:56" />
+					<arguments ID="188" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Computer slept" isHex="false" >
+						<annotations ID="189" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:16" off="i:1406" line="i:56" />
+					</arguments>
+					<qualifier ID="190" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="191" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1387" line="i:56" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="192" eClass="org.eclipse.edt.mof.egl.Function" name="lock" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="193" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:104" off="i:1438" line="i:59" />
+		<container IDREF="1"/>
+		<statementBlock ID="194" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="192"/>
+			<statements ID="195" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="196" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:25" off="i:1462" line="i:60" />
+				<container IDREF="192"/>
+				<expr ID="197" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="lock" >
+					<annotations ID="198" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:24" off="i:1462" line="i:60" />
+					<qualifier ID="199" eClass="org.eclipse.edt.mof.egl.PartName" id="BootControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="200" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:22" off="i:1462" line="i:60" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="201" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="202" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:38" off="i:1496" line="i:61" />
+				<container IDREF="192"/>
+				<expr ID="203" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="204" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:37" off="i:1496" line="i:61" />
+					<arguments ID="205" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Computer locked" isHex="false" >
+						<annotations ID="206" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:17" off="i:1515" line="i:61" />
+					</arguments>
+					<qualifier ID="207" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="208" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1496" line="i:61" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="209" eClass="org.eclipse.edt.mof.egl.Function" name="logOff" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="210" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:187" off="i:1548" line="i:64" />
+		<container IDREF="1"/>
+		<statementBlock ID="211" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="209"/>
+			<statements ID="212" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="213" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:60" off="i:1616" line="i:66" />
+				<container IDREF="209"/>
+				<expr ID="214" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="callCmd" >
+					<annotations ID="215" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:59" off="i:1616" line="i:66" />
+					<arguments ID="216" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="c:\windows\system32\shutdown.exe -l -f" isHex="false" >
+						<annotations ID="217" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:43" off="i:1631" line="i:66" />
+					</arguments>
+					<qualifier ID="218" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="219" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:1616" line="i:66" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="220" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="221" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:42" off="i:1685" line="i:67" />
+				<container IDREF="209"/>
+				<expr ID="222" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="223" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:41" off="i:1685" line="i:67" />
+					<arguments ID="224" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Computer logged off" isHex="false" >
+						<annotations ID="225" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:21" off="i:1704" line="i:67" />
+					</arguments>
+					<qualifier ID="226" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="227" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1685" line="i:67" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="228" eClass="org.eclipse.edt.mof.egl.Function" name="hibernate" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="229" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:122" off="i:1741" line="i:70" />
+		<container IDREF="1"/>
+		<statementBlock ID="230" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="228"/>
+			<statements ID="231" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="232" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:1770" line="i:71" />
+				<container IDREF="228"/>
+				<expr ID="233" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="hibernate" >
+					<annotations ID="234" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:1770" line="i:71" />
+					<qualifier ID="235" eClass="org.eclipse.edt.mof.egl.PartName" id="BootControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="236" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:27" off="i:1770" line="i:71" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="237" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="238" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:46" off="i:1809" line="i:72" />
+				<container IDREF="228"/>
+				<expr ID="239" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="240" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:45" off="i:1809" line="i:72" />
+					<arguments ID="241" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Computer is hibernating" isHex="false" >
+						<annotations ID="242" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:25" off="i:1828" line="i:72" />
+					</arguments>
+					<qualifier ID="243" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="244" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:1809" line="i:72" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="245" eClass="org.eclipse.edt.mof.egl.Function" name="reboot" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="246" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:189" off="i:1869" line="i:75" />
+		<container IDREF="1"/>
+		<statementBlock ID="247" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="245"/>
+			<statements ID="248" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="249" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:60" off="i:1937" line="i:77" />
+				<container IDREF="245"/>
+				<expr ID="250" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="callCmd" >
+					<annotations ID="251" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:59" off="i:1937" line="i:77" />
+					<arguments ID="252" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="c:\windows\system32\shutdown.exe -r -f" isHex="false" >
+						<annotations ID="253" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:43" off="i:1952" line="i:77" />
+					</arguments>
+					<qualifier ID="254" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="255" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:1937" line="i:77" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="256" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="257" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:44" off="i:2006" line="i:78" />
+				<container IDREF="245"/>
+				<expr ID="258" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="259" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:43" off="i:2006" line="i:78" />
+					<arguments ID="260" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Computer is rebooting" isHex="false" >
+						<annotations ID="261" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:23" off="i:2025" line="i:78" />
+					</arguments>
+					<qualifier ID="262" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="263" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:2006" line="i:78" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="264" eClass="org.eclipse.edt.mof.egl.Function" name="shutDown" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="265" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:202" off="i:2064" line="i:81" />
+		<container IDREF="1"/>
+		<statementBlock ID="266" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="264"/>
+			<statements ID="267" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="268" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:65" off="i:2136" line="i:83" />
+				<container IDREF="264"/>
+				<expr ID="269" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="callCmd" >
+					<annotations ID="270" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:64" off="i:2136" line="i:83" />
+					<arguments ID="271" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="c:\windows\system32\shutdown.exe -s -f -t 0" isHex="false" >
+						<annotations ID="272" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:48" off="i:2151" line="i:83" />
+					</arguments>
+					<qualifier ID="273" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="274" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:2136" line="i:83" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="275" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="276" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:48" off="i:2210" line="i:84" />
+				<container IDREF="264"/>
+				<expr ID="277" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStdout" >
+					<annotations ID="278" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:47" off="i:2210" line="i:84" />
+					<arguments ID="279" eClass="org.eclipse.edt.mof.egl.StringLiteral" value="Computer is shutting down" isHex="false" >
+						<annotations ID="280" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:27" off="i:2229" line="i:84" />
+					</arguments>
+					<qualifier ID="281" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+						<annotations ID="282" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:2210" line="i:84" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+</Service>

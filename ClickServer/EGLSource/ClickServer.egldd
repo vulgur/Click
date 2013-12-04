@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egl:deployment xmlns:egl="http://www.eclipse.org/xmlns/edt/deployment/1.0">
+  <services>
+    <service implementation="com.pku.ss.egl.server.RunCmdService" type="edt.service.rest">
+      <parameters>
+        <parameter name="uriFragment" value="RunCmdService"/>
+        <parameter name="enableGeneration" value="true"/>
+        <parameter name="implType" value="Ѐ"/>
+      </parameters>
+    </service>
+  </services>
+  <egl:target.project name="ClickServerWeb"/>
+</egl:deployment>

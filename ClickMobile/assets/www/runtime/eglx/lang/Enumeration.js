@@ -1,0 +1,1 @@
+egl.defineClass("eglx.lang","Enumeration",{"constructor":function(){this.value=0;}});

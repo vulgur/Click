@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Generated at Thu Jul 12 21:43:52 CST 2012 by EGL  -->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Home</title>
+<script type="text/javascript" src="runtime/edt_core.js" ></script>
+<script type="text/javascript" src="runtime/dojo.js" ></script>
+<script type="text/javascript">
+egl.initParams("ClickClientWeb", "clickclient", "zh_CN", "zh", "CHS", "yyyy-MM-dd", "yyyy-MM-dd", "MM-dd-yyyy", "гд", ".", ",");
+</script>
+</head>
+<body class="claro">
+<noscript>Your browser does not support JavaScript!</noscript>
+<script type="text/javascript">
+require(["runtime/edt_runtime_all.js"], function() {
+	require(["client/Home", "runtime/egl/messages/RuiMessages-zh", "clickclient-bnd.js", "org_eclipse_edt_rui_widgets-bnd.js", "org_eclipse_edt_rui_dojo_mobile-bnd.js"], function() {
+		egl.init(function(){
+			if(egl.client.Home){
+				egl.rootHandler = new egl.client.Home();
+				egl.rootHandler.setParent(egl.Document);
+				egl.startup();
+			}else{
+				egl.reportHandlerLoadError("egl.client.Home");
+			}
+		}
+		);
+	});
+});
+</script>
+</body>
+</html>

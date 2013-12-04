@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ExternalType ID="1" eClass="org.eclipse.edt.mof.egl.ExternalType" name="Monitor" fileName="com/pku/ss/egl/et/Monitor.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.et" isAbstract="false" >
+	<annotations ID="2" eClass="egl:eglx.java.javaobject" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:194" off="i:29" line="i:4" />
+	<superTypes href="egl:com.pku.ss.egl.et.serializable"/>
+	<constructors ID="4" eClass="org.eclipse.edt.mof.egl.Constructor" name="constructor" type="egl:com.pku.ss.egl.et.monitor" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:92" line="i:6" />
+		<container IDREF="1"/>
+	</constructors>
+	<functions ID="6" eClass="org.eclipse.edt.mof.egl.Function" name="closeMonitor" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:24" off="i:112" line="i:8" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="8" eClass="org.eclipse.edt.mof.egl.Function" name="getInstance" type="egl:com.pku.ss.egl.et.monitor" isNullable="true" isStatic="true" isAbstract="false" >
+		<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:48" off="i:142" line="i:10" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="10" eClass="org.eclipse.edt.mof.egl.Function" name="openMonitor" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:23" off="i:196" line="i:12" />
+		<container IDREF="1"/>
+	</functions>
+</ExternalType>

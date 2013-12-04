@@ -1,0 +1,11 @@
+package com.pku.ss.egl.prog;
+import com.pku.ss.egl.libs.*;
+// program
+//
+program TestSound
+	
+	function main()
+		SoundControllerLib.setVolume(100);
+	end
+	
+end

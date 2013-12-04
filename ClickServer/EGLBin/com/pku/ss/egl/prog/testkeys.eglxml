@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Program ID="1" eClass="org.eclipse.edt.mof.egl.Program" name="TestKeys" fileName="com/pku/ss/egl/prog/TestKeys.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.prog" isAbstract="false" isCallable="false" >
+	<annotations ID="2" eClass="egl:eglx.lang.basicprogram" unloadOnExit="false" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:116" off="i:73" line="i:5" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="4" eClass="org.eclipse.edt.mof.egl.Function" name="main" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:89" off="i:94" line="i:8" />
+		<container IDREF="1"/>
+		<statementBlock ID="6" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="4"/>
+			<statements ID="7" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="8" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:28" off="i:112" line="i:9" />
+				<container IDREF="4"/>
+				<expr ID="9" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="left" >
+					<annotations ID="10" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:27" off="i:112" line="i:9" />
+					<qualifier ID="11" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeysControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="12" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:25" off="i:112" line="i:9" />
+					</qualifier>
+				</expr>
+			</statements>
+			<statements ID="13" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="14" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:35" off="i:143" line="i:10" />
+				<container IDREF="4"/>
+				<expr ID="15" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="backwardCmd" >
+					<annotations ID="16" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:34" off="i:143" line="i:10" />
+					<qualifier ID="17" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeysControllerLib" packageName="com.pku.ss.egl.libs" >
+						<annotations ID="18" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:143" line="i:10" />
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+</Program>

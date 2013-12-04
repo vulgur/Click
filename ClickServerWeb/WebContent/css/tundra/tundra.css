@@ -1,0 +1,158 @@
+/*******************************************************************************
+ * Copyright © 2011 IBM Corporation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ * IBM Corporation - initial API and implementation
+ *
+ *******************************************************************************/
+/*
+	Adds cosmetic styling to Dijit.  Users may swap with a custom theme CSS file.
+	
+	NOTES:
+	--- 
+	Dialog.css contains css classes for both Dialog and Tooltip! 
+	This because currently a dijit.TooltipDialog exist. Until this is resolved 
+	you need to include Dialog.css for both dijits
+	---
+	Toolbar.css contains classes also used in Editor. Until this is resolved 
+	you need to include Toolbar.css for both Toolbar and Editor
+	---
+	Button.css contains classes for combobox, 
+	
+*/
+.EglRuiReset {
+	/* Use this style to null out padding, margin, border in your template elements
+		so that page specific styles don't break them.
+		- Use in all TABLE, TR and TD tags.	
+	*/
+	margin:0;
+	border:0;
+	padding:0;
+	line-height:normal;
+	font: inherit;
+	color: inherit;
+}
+
+.tundra .EglRuiTextBox,
+.tundra .EglRuiPasswordTextField {
+	margin: 0em 0.1em;
+}
+
+.tundra .EglRuiTextField,
+.tundra .EglRuiPasswordTextField,
+.tundra .EglRuiList,
+.tundra .EglRuiTextArea {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+.tundra .EglRuiTextArea {
+	padding: 3px;
+}
+
+.tundra .EglRuiTextField,
+.tundra .EglRuiPasswordTextField,
+.tundra .EglRuiList,
+.tundra .EglRuiTextArea {
+	/* 	For all except dijit.form.NumberSpinner:  the actual input element.
+		For TextBox, ComboBox, Spinner: the div that contains the input.
+		Otherwise the actual input element.
+	*/
+	background:#FFF url("images/validationInputBg.png") repeat-x top left;
+	#background:#FFF url('images/validationInputBg.gif') repeat-x top left;
+	border:1px solid #B3B3B3;
+	line-height: normal;
+}
+
+.tundra .EglRuiTextFieldDisabled,
+.tundra .EglRuiPasswordTextFieldDisabled,
+.tundra .EglRuiListDisabled,
+.tundra .EglRuiTextAreaDisabled {
+	border: 1px solid #C0C0C0; 
+	border-bottom: 1px solid #9B9B9B; 
+	padding: 0.1em 0.2em 0.2em 0.2em; 
+	border-color: #D5D5D5 #D5D5D5 #BDBDBD #D5D5D5; 
+	background:#E4E4E4 url("images/buttonDisabled.png") top repeat-x;
+}
+.dj_safari .tundra .dijitTextBoxDisabled,
+.dj_safari .tundra .EglRuiPasswordTextFieldDisabled,
+.dj_safari .tundra .dijitComboBoxDisabled,
+.dj_safari .tundra .dijitSpinnerDisabled,
+.dj_safari .tundra .dijitTextAreaDisabled {
+	color: #EEE;
+}
+
+.tundra .EglRuiTextFieldReadOnly,
+.tundra .EglRuiPasswordTextFieldReadOnly,
+.tundra .EglRuiListReadOnly,
+.tundra .EglRuiTextAreaReadOnly {
+	border: 1px solid #C0C0C0; 
+	border-bottom: 1px solid #9B9B9B; 
+	padding: 0.1em 0.2em 0.2em 0.2em; 
+	border-color: #D5D5D5 #D5D5D5 #BDBDBD #D5D5D5; 
+	background:#E4E4E4 url("images/buttonDisabled.png") top repeat-x;
+}
+
+.tundra .EglRuiTextFieldFocused,
+.tundra .EglRuiPasswordTextFieldFocused,
+.tundra .EglRuiListFocused,
+.tundra .EglRuiTextAreaFocused {
+	/* input field when focused (ie: typing affects it) */
+	border-color:#406B9B;
+}
+
+/**** Disabled cursor *****/
+.tundra .EglRuiCursorDisabled
+{
+	cursor: not-allowed !important;
+}
+
+
+/*****
+		dijit.form.Button
+		dijit.form.DropDownButton
+		dijit.form.ComboButton
+		dijit.form.ComboBox (partial)
+ *****/
+
+.tundra .EglRuiButton {
+	/* enabled state - inner */
+	border: 1px solid #C0C0C0; 
+	border-bottom: 1px solid #9B9B9B; 
+	padding: 0.1em 0.2em 0.2em 0.2em; 
+	background: #FFF url("images/buttonEnabled.png") repeat-x bottom left;
+	background-color: transparent; 
+}
+
+.tundra .EglRuiButton:Hover {
+	/* hover state - inner */
+	/* TODO: change from Hover to Selected so that button is still highlighted while drop down is being used */
+	border-color:		#A5BEDA; 
+	border-bottom-color:#5c7590; 
+	color:#243C5F;
+	background:#FCFDFF url("images/buttonHover.png") repeat-x bottom;
+}
+
+.tundra .EglRuiButton:Active {
+	/* active state - inner (for when you are pressing a normal button, or
+	 * when a toggle button is in a depressed state
+	 */
+	border-color:#366DBA;
+	background: #EDEDED url("images/buttonActive.png") bottom repeat-x;
+}
+
+.tundra .EglRuiButtonDisabled{
+	/* disabled state - inner */
+	/* border-color: #D5D5D5 #BDBDBD #BDBDBD #D5D5D5; */
+	border: 1px solid #C0C0C0; 
+	border-bottom: 1px solid #9B9B9B; 
+	padding: 0.1em 0.2em 0.2em 0.2em; 
+	border-color: #D5D5D5 #D5D5D5 #BDBDBD #D5D5D5; 
+	background:#E4E4E4 url("images/buttonDisabled.png") top repeat-x;
+}
+
+

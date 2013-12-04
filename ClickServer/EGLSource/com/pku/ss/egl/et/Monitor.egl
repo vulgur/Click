@@ -1,0 +1,19 @@
+package com.pku.ss.egl.et;
+
+
+externalType Monitor extends Serializable type JavaObject
+
+    constructor();
+
+    function closeMonitor();
+
+    static function getInstance() returns(Monitor?);
+
+    function openMonitor();
+end
+
+externalType Serializable type JavaObject{PackageName = "java.io"}
+
+    private constructor();
+end
+

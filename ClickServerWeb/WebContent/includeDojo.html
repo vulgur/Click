@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	require({
+    	packages : [ {
+			name : 'dojo',
+			location : '../dojo'
+    	}, {
+			name : 'dijit',
+			location : '../dijit'
+		}, {
+			name : 'dojox',
+			location : '../dojox'
+		} ],
+		locale: egl__htmlLocale.replace(/_/, "-").toLowerCase()
+  	});
+ 	egl.urlPrefix = "";
+	egl.dojoProvider = "Mobile Local Workspace, 1.7.1, project: org.eclipse.edt.rui.dojo.mobile_0.8.0";
+</script>
+
+<style type="text/css">
+	@import "dojo/resources/dojo.css";
+</style>
+
+<link href="dijit/themes/claro/claro.css" type="text/css" rel="stylesheet" media="screen" id="EGLDOJOTheme_CSS" />
+
+<script type="text/javascript" src="dojo/dojo.js.uncompressed.js"></script>

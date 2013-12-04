@@ -1,0 +1,13 @@
+package com.pku.ss.egl.libs;
+import com.pku.ss.egl.et.*;
+// basic library
+
+library SoundControllerLib
+
+    private sc SoundControl{};
+
+    function setVolume(value int in)
+        sc.setVolumeValue(value);
+    end
+
+end

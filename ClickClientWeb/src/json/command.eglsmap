@@ -1,0 +1,11 @@
+SMAP
+command.java
+egl
+*S egl
+*F
++ 1 command.egl
+json/command.egl
+*L
+*E
+8#1;itemName;itemName;eglx.lang.EString
+*X

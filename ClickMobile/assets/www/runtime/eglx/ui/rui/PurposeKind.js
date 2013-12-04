@@ -1,0 +1,1 @@
+egl.defineClass("eglx.ui.rui","PurposeKind","eglx.lang","Enumeration",{"constructor":function(_1){this.value=_1;}});egl.eglx.ui.rui.PurposeKind["FOR_DISPLAY"]=new egl.eglx.ui.rui.PurposeKind(1);egl.eglx.ui.rui.PurposeKind["FOR_CREATE"]=new egl.eglx.ui.rui.PurposeKind(2);egl.eglx.ui.rui.PurposeKind["FOR_UPDATE"]=new egl.eglx.ui.rui.PurposeKind(3);

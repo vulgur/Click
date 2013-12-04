@@ -1,0 +1,20 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ExternalType ID="1" eClass="org.eclipse.edt.mof.egl.ExternalType" name="Player" fileName="com/pku/ss/egl/et/Player.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.et" isAbstract="false" >
+	<annotations ID="2" eClass="egl:eglx.java.javaobject" packageName="com.pku.ss.egl.et" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:291" off="i:28" line="i:3" />
+	<superTypes href="egl:eglx.java.object"/>
+	<constructors ID="4" eClass="org.eclipse.edt.mof.egl.Constructor" name="constructor" type="egl:com.pku.ss.egl.et.player" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:105" line="i:5" />
+		<container IDREF="1"/>
+	</constructors>
+	<functions ID="6" eClass="org.eclipse.edt.mof.egl.Function" name="playMusic" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="7" eClass="egl:eglx.lang.throws" />
+		<annotations ID="8" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:37" off="i:235" line="i:11" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="9" eClass="org.eclipse.edt.mof.egl.Function" name="playVideo" isNullable="false" isStatic="true" isAbstract="false" >
+		<annotations ID="10" eClass="egl:eglx.lang.throws" />
+		<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:37" off="i:278" line="i:13" />
+		<container IDREF="1"/>
+	</functions>
+</ExternalType>

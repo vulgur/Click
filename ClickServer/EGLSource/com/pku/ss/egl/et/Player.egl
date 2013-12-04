@@ -1,0 +1,15 @@
+package com.pku.ss.egl.et;
+
+externalType Player type JavaObject {PackageName = "com.pku.ss.egl.et"}
+
+    constructor();
+
+    //static function getInstance() returns(Player?);
+    
+    //static function getPath() returns(string?);
+
+    static function playMusic(){@Throws};
+
+    static function playVideo(){@Throws};
+end
+

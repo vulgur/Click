@@ -1,0 +1,86 @@
+package com.pku.ss.egl.server;
+
+import com.pku.ss.egl.libs.*;
+// service
+
+service RunCmdService
+
+    function playMusic()
+//    	PlayerControllerLib.GetPath();
+        PlayerControllerLib.PlayMusic();
+        syslib.writeStdout("playing music");
+    end
+
+    function playVideo()
+        PlayerControllerLib.PlayVideo();
+        syslib.writeStdout("playing video");
+    end
+
+    function switchDisplay(value boolean in)
+        if(value == true)
+            MonitorControllerLib.openMonitor();
+            syslib.writeStdout("Display is opened");
+        else
+            MonitorControllerLib.closeMonitor();
+            syslib.writeStdout("Display is closed");
+        end
+    end
+
+    function changeVolume(value int in)
+        SoundControllerLib.setVolume(value);
+        syslib.writeStdout("volume is " + value);
+    end
+
+    function left()
+        HotKeysControllerLib.left();
+        syslib.writeStdout("left key is pressed");
+    end
+
+    function right()
+        HotKeysControllerLib.right();
+        syslib.writeStdout("right key is pressed");
+    end
+
+    function backwardCmd()
+        HotKeysControllerLib.backwardCmd();
+        syslib.writeStdout("backward is invoked");
+    end
+
+    function forwardCmd()
+        HotKeysControllerLib.forwardCmd();
+        syslib.writeStdout("forward is invoked");
+    end
+
+    function sleep()
+        BootControllerLib.sleep();
+        syslib.writeStdout("Computer slept");
+    end
+
+    function lock()
+        BootControllerLib.lock();
+        syslib.writeStdout("Computer locked");
+    end
+
+    function logOff()
+    //        BootControllerLib.logOff();
+        syslib.callCmd("c:\\windows\\system32\\shutdown.exe -l -f");
+        syslib.writeStdout("Computer logged off");
+    end
+
+    function hibernate()
+        BootControllerLib.hibernate();
+        syslib.writeStdout("Computer is hibernating");
+    end
+
+    function reboot()
+    //        BootControllerLib.reboot();
+        syslib.callCmd("c:\\windows\\system32\\shutdown.exe -r -f");
+        syslib.writeStdout("Computer is rebooting");
+    end
+
+    function shutDown()
+    //        BootControllerLib.shutDown();
+        syslib.callCmd("c:\\windows\\system32\\shutdown.exe -s -f -t 0");
+        syslib.writeStdout("Computer is shutting down");
+    end
+end

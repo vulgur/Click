@@ -1,0 +1,13 @@
+package com.pku.ss.egl.prog;
+import com.pku.ss.egl.server.*;
+// program
+//
+program TestMusic
+		
+	function main()
+//		syslib.startCmd("music\\Flourishing.mp3");
+//		syslib.startCmd("video\\Rolling In The Deep.MP4");
+//		RunCmdService.playMusic();
+	end
+	
+end

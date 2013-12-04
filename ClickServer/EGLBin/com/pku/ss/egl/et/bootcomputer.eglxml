@@ -1,0 +1,46 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ExternalType ID="1" eClass="org.eclipse.edt.mof.egl.ExternalType" name="BootComputer" fileName="com/pku/ss/egl/et/BootComputer.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.et" isAbstract="false" >
+	<annotations ID="2" eClass="egl:eglx.java.javaobject" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:330" off="i:29" line="i:4" />
+	<superTypes href="egl:com.pku.ss.egl.et.serializable"/>
+	<constructors ID="4" eClass="org.eclipse.edt.mof.egl.Constructor" name="constructor" type="egl:com.pku.ss.egl.et.bootcomputer" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:97" line="i:6" />
+		<container IDREF="1"/>
+	</constructors>
+	<functions ID="6" eClass="org.eclipse.edt.mof.egl.Function" name="getInstance" type="egl:com.pku.ss.egl.et.bootcomputer" isNullable="true" isStatic="true" isAbstract="false" >
+		<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:53" off="i:117" line="i:8" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="8" eClass="org.eclipse.edt.mof.egl.Function" name="hibernate" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:21" off="i:176" line="i:10" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="10" eClass="org.eclipse.edt.mof.egl.Function" name="lock" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:16" off="i:203" line="i:12" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="12" eClass="org.eclipse.edt.mof.egl.Function" name="logOff" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="13" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:225" line="i:14" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="14" eClass="org.eclipse.edt.mof.egl.Function" name="reboot" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:249" line="i:16" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="16" eClass="org.eclipse.edt.mof.egl.Function" name="shutDown" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:20" off="i:273" line="i:18" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="18" eClass="org.eclipse.edt.mof.egl.Function" name="sleep" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:17" off="i:299" line="i:20" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="20" eClass="org.eclipse.edt.mof.egl.Function" name="switchBoot" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:33" off="i:322" line="i:22" />
+		<container IDREF="1"/>
+		<parameters ID="22" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="arg0" type="egl:eglx.lang.eint" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_IN" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="23" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:342" line="i:22" />
+			<container IDREF="20"/>
+		</parameters>
+	</functions>
+</ExternalType>

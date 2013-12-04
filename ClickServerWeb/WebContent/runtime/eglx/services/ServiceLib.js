@@ -1,0 +1,1 @@
+egl.defineClass("eglx.services","ServiceLib",{"constructor":function(){}});egl.eglx.services.ServiceLib["completeBind"]=function(_1,_2){_1.ezeCopy(egl.eglx.lang.EAny.unbox(_2));return egl.eglx.lang.EAny.unbox(_2);};

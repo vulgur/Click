@@ -1,0 +1,11 @@
+SMAP
+IRest.java
+egl
+*S egl
+*F
++ 1 IRest.egl
+interfaces/IRest.egl
+*L
+*E
+6#1;parameterName;parameterName;eglx.lang.EString
+*X

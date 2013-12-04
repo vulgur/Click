@@ -1,0 +1,45 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Library ID="1" eClass="org.eclipse.edt.mof.egl.Library" name="MonitorControllerLib" fileName="com/pku/ss/egl/libs/MonitorControllerLib.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.libs" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:190" off="i:74" line="i:4" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.egl.Function" name="openMonitor" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:61" off="i:141" line="i:8" />
+		<container IDREF="1"/>
+		<statementBlock ID="5" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+			<statements ID="6" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:22" off="i:172" line="i:9" />
+				<container IDREF="3"/>
+				<expr ID="8" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="openMonitor" >
+					<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:21" off="i:172" line="i:9" />
+					<qualifier ID="10" eClass="org.eclipse.edt.mof.egl.MemberName" id="monitor" >
+						<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:7" off="i:172" line="i:9" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="13" eClass="org.eclipse.edt.mof.egl.Function" name="closeMonitor" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="14" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:54" off="i:206" line="i:12" />
+		<container IDREF="1"/>
+		<statementBlock ID="15" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="13"/>
+			<statements ID="16" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:23" off="i:232" line="i:13" />
+				<container IDREF="13"/>
+				<expr ID="18" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="closeMonitor" >
+					<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:22" off="i:232" line="i:13" />
+					<qualifier ID="20" eClass="org.eclipse.edt.mof.egl.MemberName" id="monitor" >
+						<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:7" off="i:232" line="i:13" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<fields ID="12" eClass="org.eclipse.edt.mof.egl.Field" name="monitor" type="egl:com.pku.ss.egl.et.monitor" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" hasSetValuesBlock="false" isImplicit="false" isSystemField="false" >
+		<annotations ID="22" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:26" off="i:109" line="i:6" />
+		<container IDREF="1"/>
+	</fields>
+</Library>

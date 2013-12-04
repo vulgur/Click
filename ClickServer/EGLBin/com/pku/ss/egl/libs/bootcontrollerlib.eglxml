@@ -1,0 +1,117 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Library ID="1" eClass="org.eclipse.edt.mof.egl.Library" name="BootControllerLib" fileName="com/pku/ss/egl/libs/BootControllerLib.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.libs" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:379" off="i:76" line="i:6" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.egl.Function" name="sleep" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:44" off="i:139" line="i:10" />
+		<container IDREF="1"/>
+		<statementBlock ID="5" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+			<statements ID="6" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:164" line="i:11" />
+				<container IDREF="3"/>
+				<expr ID="8" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="sleep" >
+					<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:10" off="i:164" line="i:11" />
+					<qualifier ID="10" eClass="org.eclipse.edt.mof.egl.MemberName" id="bc" >
+						<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:164" line="i:11" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="13" eClass="org.eclipse.edt.mof.egl.Function" name="shutDown" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="14" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:50" off="i:189" line="i:14" />
+		<container IDREF="1"/>
+		<statementBlock ID="15" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="13"/>
+			<statements ID="16" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:217" line="i:15" />
+				<container IDREF="13"/>
+				<expr ID="18" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="shutDown" >
+					<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:217" line="i:15" />
+					<qualifier ID="20" eClass="org.eclipse.edt.mof.egl.MemberName" id="bc" >
+						<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:217" line="i:15" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="22" eClass="org.eclipse.edt.mof.egl.Function" name="lock" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="23" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:42" off="i:245" line="i:18" />
+		<container IDREF="1"/>
+		<statementBlock ID="24" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="22"/>
+			<statements ID="25" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="26" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:10" off="i:269" line="i:19" />
+				<container IDREF="22"/>
+				<expr ID="27" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="lock" >
+					<annotations ID="28" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:269" line="i:19" />
+					<qualifier ID="29" eClass="org.eclipse.edt.mof.egl.MemberName" id="bc" >
+						<annotations ID="30" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:269" line="i:19" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="31" eClass="org.eclipse.edt.mof.egl.Function" name="logOff" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="32" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:46" off="i:293" line="i:22" />
+		<container IDREF="1"/>
+		<statementBlock ID="33" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="31"/>
+			<statements ID="34" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="35" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:12" off="i:319" line="i:23" />
+				<container IDREF="31"/>
+				<expr ID="36" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="logOff" >
+					<annotations ID="37" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:319" line="i:23" />
+					<qualifier ID="38" eClass="org.eclipse.edt.mof.egl.MemberName" id="bc" >
+						<annotations ID="39" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:319" line="i:23" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="40" eClass="org.eclipse.edt.mof.egl.Function" name="hibernate" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="41" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:52" off="i:345" line="i:26" />
+		<container IDREF="1"/>
+		<statementBlock ID="42" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="40"/>
+			<statements ID="43" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="44" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:15" off="i:374" line="i:27" />
+				<container IDREF="40"/>
+				<expr ID="45" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="hibernate" >
+					<annotations ID="46" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:374" line="i:27" />
+					<qualifier ID="47" eClass="org.eclipse.edt.mof.egl.MemberName" id="bc" >
+						<annotations ID="48" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:374" line="i:27" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="49" eClass="org.eclipse.edt.mof.egl.Function" name="reboot" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="50" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:43" off="i:407" line="i:30" />
+		<container IDREF="1"/>
+		<statementBlock ID="51" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="49"/>
+			<statements ID="52" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="53" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:12" off="i:430" line="i:31" />
+				<container IDREF="49"/>
+				<expr ID="54" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="reboot" >
+					<annotations ID="55" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:430" line="i:31" />
+					<qualifier ID="56" eClass="org.eclipse.edt.mof.egl.MemberName" id="bc" >
+						<annotations ID="57" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:430" line="i:31" />
+						<member IDREF="12"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<fields ID="12" eClass="org.eclipse.edt.mof.egl.Field" name="bc" type="egl:com.pku.ss.egl.et.bootcomputer" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" hasSetValuesBlock="false" isImplicit="false" isSystemField="false" >
+		<annotations ID="58" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:26" off="i:107" line="i:8" />
+		<container IDREF="1"/>
+	</fields>
+</Library>

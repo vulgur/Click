@@ -1,0 +1,41 @@
+package com.pku.ss.egl.libs;
+
+import com.pku.ss.egl.et.*;
+// basic library
+
+library HotKeysControllerLib
+
+    private hk HotKeys{};
+
+    function left()
+        try
+            hk.left();
+        onException(e AnyException)
+            syslib.writeStderr(e.message);
+        end
+    end
+
+    function right()
+        try
+            hk.right();
+        onException(e AnyException)
+            syslib.writeStderr(e.message);
+        end
+    end
+
+    function backwardCmd()
+        try
+            hk.backward();
+        onException(e AnyException)
+            syslib.writeStderr(e.message);
+        end
+    end
+
+    function forwardCmd()
+        try
+            hk._forward();
+        onException(e AnyException)
+            syslib.writeStderr(e.message);
+        end
+    end
+end

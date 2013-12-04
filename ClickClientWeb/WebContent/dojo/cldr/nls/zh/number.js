@@ -1,0 +1,1 @@
+define({"decimalFormat":"#,##0.###","group":",","scientificFormat":"#E0","percentFormat":"#,##0%","currencyFormat":"\xa4#,##0.00","decimal":"."});

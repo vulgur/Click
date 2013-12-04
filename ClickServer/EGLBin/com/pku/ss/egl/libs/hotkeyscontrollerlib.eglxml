@@ -1,0 +1,205 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Library ID="1" eClass="org.eclipse.edt.mof.egl.Library" name="HotKeysControllerLib" fileName="com/pku/ss/egl/libs/HotKeysControllerLib.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.libs" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:702" off="i:76" line="i:6" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.egl.Function" name="left" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:149" off="i:137" line="i:10" />
+		<container IDREF="1"/>
+		<statementBlock ID="5" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+			<statements ID="6" eClass="org.eclipse.edt.mof.egl.TryStatement" >
+				<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:117" off="i:161" line="i:11" />
+				<container IDREF="3"/>
+				<tryBlock ID="8" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:117" off="i:161" line="i:11" />
+					<container IDREF="3"/>
+					<statements ID="10" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:10" off="i:177" line="i:12" />
+						<container IDREF="3"/>
+						<expr ID="12" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="left" >
+							<annotations ID="13" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:177" line="i:12" />
+							<qualifier ID="14" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeys" packageName="com.pku.ss.egl.et" >
+								<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:7" off="i:177" line="i:12" />
+							</qualifier>
+						</expr>
+					</statements>
+				</tryBlock>
+				<exceptionBlocks ID="16" eClass="org.eclipse.edt.mof.egl.ExceptionBlock" >
+					<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:70" off="i:196" line="i:13" />
+					<container IDREF="3"/>
+					<statements ID="18" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:236" line="i:14" />
+						<container IDREF="3"/>
+						<expr ID="20" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:236" line="i:14" />
+							<arguments ID="22" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="message" >
+								<annotations ID="23" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:255" line="i:14" />
+								<qualifier ID="24" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="25" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:255" line="i:14" />
+									<member IDREF="26"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="27" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="28" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:236" line="i:14" />
+							</qualifier>
+						</expr>
+					</statements>
+					<exception ID="26" eClass="org.eclipse.edt.mof.egl.Parameter" name="e" type="egl:eglx.lang.anyexception" isNullable="false" isStatic="false" isAbstract="false" >
+						<annotations ID="29" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:208" line="i:13" />
+					</exception>
+				</exceptionBlocks>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="30" eClass="org.eclipse.edt.mof.egl.Function" name="right" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="31" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:151" off="i:292" line="i:18" />
+		<container IDREF="1"/>
+		<statementBlock ID="32" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="30"/>
+			<statements ID="33" eClass="org.eclipse.edt.mof.egl.TryStatement" >
+				<annotations ID="34" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:118" off="i:317" line="i:19" />
+				<container IDREF="30"/>
+				<tryBlock ID="35" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="36" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:118" off="i:317" line="i:19" />
+					<container IDREF="30"/>
+					<statements ID="37" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="38" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:333" line="i:20" />
+						<container IDREF="30"/>
+						<expr ID="39" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="right" >
+							<annotations ID="40" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:10" off="i:333" line="i:20" />
+							<qualifier ID="41" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeys" packageName="com.pku.ss.egl.et" >
+								<annotations ID="42" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:8" off="i:333" line="i:20" />
+							</qualifier>
+						</expr>
+					</statements>
+				</tryBlock>
+				<exceptionBlocks ID="43" eClass="org.eclipse.edt.mof.egl.ExceptionBlock" >
+					<annotations ID="44" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:70" off="i:353" line="i:21" />
+					<container IDREF="30"/>
+					<statements ID="45" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="46" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:393" line="i:22" />
+						<container IDREF="30"/>
+						<expr ID="47" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="48" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:393" line="i:22" />
+							<arguments ID="49" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="message" >
+								<annotations ID="50" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:412" line="i:22" />
+								<qualifier ID="51" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="52" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:412" line="i:22" />
+									<member IDREF="53"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="54" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="55" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:393" line="i:22" />
+							</qualifier>
+						</expr>
+					</statements>
+					<exception ID="53" eClass="org.eclipse.edt.mof.egl.Parameter" name="e" type="egl:eglx.lang.anyexception" isNullable="false" isStatic="false" isAbstract="false" >
+						<annotations ID="56" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:365" line="i:21" />
+					</exception>
+				</exceptionBlocks>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="57" eClass="org.eclipse.edt.mof.egl.Function" name="backwardCmd" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="58" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:160" off="i:449" line="i:26" />
+		<container IDREF="1"/>
+		<statementBlock ID="59" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="57"/>
+			<statements ID="60" eClass="org.eclipse.edt.mof.egl.TryStatement" >
+				<annotations ID="61" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:121" off="i:480" line="i:27" />
+				<container IDREF="57"/>
+				<tryBlock ID="62" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="63" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:121" off="i:480" line="i:27" />
+					<container IDREF="57"/>
+					<statements ID="64" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="65" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:496" line="i:28" />
+						<container IDREF="57"/>
+						<expr ID="66" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="backward" >
+							<annotations ID="67" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:496" line="i:28" />
+							<qualifier ID="68" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeys" packageName="com.pku.ss.egl.et" >
+								<annotations ID="69" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:496" line="i:28" />
+							</qualifier>
+						</expr>
+					</statements>
+				</tryBlock>
+				<exceptionBlocks ID="70" eClass="org.eclipse.edt.mof.egl.ExceptionBlock" >
+					<annotations ID="71" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:70" off="i:519" line="i:29" />
+					<container IDREF="57"/>
+					<statements ID="72" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="73" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:559" line="i:30" />
+						<container IDREF="57"/>
+						<expr ID="74" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="75" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:559" line="i:30" />
+							<arguments ID="76" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="message" >
+								<annotations ID="77" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:578" line="i:30" />
+								<qualifier ID="78" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="79" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:578" line="i:30" />
+									<member IDREF="80"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="81" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="82" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:559" line="i:30" />
+							</qualifier>
+						</expr>
+					</statements>
+					<exception ID="80" eClass="org.eclipse.edt.mof.egl.Parameter" name="e" type="egl:eglx.lang.anyexception" isNullable="false" isStatic="false" isAbstract="false" >
+						<annotations ID="83" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:531" line="i:29" />
+					</exception>
+				</exceptionBlocks>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="84" eClass="org.eclipse.edt.mof.egl.Function" name="forwardCmd" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="85" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:159" off="i:615" line="i:34" />
+		<container IDREF="1"/>
+		<statementBlock ID="86" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="84"/>
+			<statements ID="87" eClass="org.eclipse.edt.mof.egl.TryStatement" >
+				<annotations ID="88" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:121" off="i:645" line="i:35" />
+				<container IDREF="84"/>
+				<tryBlock ID="89" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="90" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:121" off="i:645" line="i:35" />
+					<container IDREF="84"/>
+					<statements ID="91" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="92" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:661" line="i:36" />
+						<container IDREF="84"/>
+						<expr ID="93" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="_forward" >
+							<annotations ID="94" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:661" line="i:36" />
+							<qualifier ID="95" eClass="org.eclipse.edt.mof.egl.PartName" id="HotKeys" packageName="com.pku.ss.egl.et" >
+								<annotations ID="96" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:661" line="i:36" />
+							</qualifier>
+						</expr>
+					</statements>
+				</tryBlock>
+				<exceptionBlocks ID="97" eClass="org.eclipse.edt.mof.egl.ExceptionBlock" >
+					<annotations ID="98" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:70" off="i:684" line="i:37" />
+					<container IDREF="84"/>
+					<statements ID="99" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="100" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:724" line="i:38" />
+						<container IDREF="84"/>
+						<expr ID="101" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="102" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:724" line="i:38" />
+							<arguments ID="103" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="message" >
+								<annotations ID="104" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:743" line="i:38" />
+								<qualifier ID="105" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="106" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:743" line="i:38" />
+									<member IDREF="107"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="108" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="109" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:724" line="i:38" />
+							</qualifier>
+						</expr>
+					</statements>
+					<exception ID="107" eClass="org.eclipse.edt.mof.egl.Parameter" name="e" type="egl:eglx.lang.anyexception" isNullable="false" isStatic="false" isAbstract="false" >
+						<annotations ID="110" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:696" line="i:37" />
+					</exception>
+				</exceptionBlocks>
+			</statements>
+		</statementBlock>
+	</functions>
+	<fields ID="111" eClass="org.eclipse.edt.mof.egl.Field" name="hk" type="egl:com.pku.ss.egl.et.hotkeys" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" hasSetValuesBlock="false" isImplicit="false" isSystemField="false" >
+		<annotations ID="112" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:21" off="i:110" line="i:8" />
+		<container IDREF="1"/>
+	</fields>
+</Library>

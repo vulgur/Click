@@ -1,0 +1,1 @@
+define({"currencyFormat":"#,##0.00\xa0\xa4","group":"\xa0"});

@@ -1,0 +1,20 @@
+package com.pku.ss.egl.et;
+
+
+externalType HotKeys type JavaObject
+
+    constructor();
+
+    static function backward(){@Throws};
+
+    static function esc(){@Throws};
+
+    static function _forward(){externalName = "forward", @Throws};
+
+    static function getInstance() returns(HotKeys?);
+
+    static function left(){@Throws};
+
+    static function right(){@Throws};
+end
+

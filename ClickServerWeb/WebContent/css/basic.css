@@ -1,0 +1,594 @@
+/*******************************************************************************
+ * Copyright © 2011 IBM Corporation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ * IBM Corporation - initial API and implementation
+ *
+ *******************************************************************************/
+@CHARSET "ISO-8859-1";
+
+/*************************** Common *****************************/
+body {
+	font-family: Arial;
+	-webkit-text-size-adjust: none;
+}
+
+.EglRuiAlignLeft {
+	margin-left: 0;
+	text-align: left;
+}
+.EglRuiAlignCenter {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.EglRuiAlignRight {
+	text-align: right;
+	margin-right: 0
+}
+.EglRuiVAlignTop {
+	vertical-align: top;
+}
+.EglRuiVAlignMiddle {
+	vertical-align: middle;
+}
+.EglRuiVAlignBottom {
+	vertical-align: bottom;
+}
+
+/*************************** Grouping *****************************/
+
+.EglRuiGrouping {
+	border: 1px solid black;
+}
+/*************************** Floats *****************************/
+
+.EglRuiFloatLeft {
+	float: left;
+}
+.EglRuiFloatRight {
+	float: right;
+}
+
+/*************************** BIDITextArea ***********************/
+
+.EglRuiBIDITextArea {
+	border: 1px solid #7F9DB9;
+}
+.EglRuiBIDITextAreaReadOnly {
+	border: 1px solid #7F9DB9;
+	background-color: #C0C0C0;
+}
+
+/*************************** BIDITextField ***********************/
+
+.EglRuiBIDITextField {
+	border: 1px solid #7F9DB9;
+}
+.EglRuiBIDITextFieldReadOnly {
+	border: 1px solid #7F9DB9;
+	background-color: #C0C0C0;
+}
+
+/*************************** Box *****************************/
+
+.EglRuiBox {
+	overflow: hidden;
+}
+.EglRuiBoxTable {
+	border-collapse: collapse;
+}
+.EglRuiBoxTd {
+	padding: 0; 
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+/*************************** GridLayout *****************************/
+
+.EglRuiGridLayout {
+	display: inline-block;
+}
+
+/*************************** Grid *****************************/
+
+.EglRuiGridTable {
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 1px;
+}
+.EglRuiGridCell {
+	padding: 5px; 
+	border: 1px solid black;
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+.EglRuiGridCellColor1 {
+	background-color: lightGrey;
+	color: darkGreen;
+}
+.EglRuiGridCellColor2 {
+	background-color: white; 
+}
+.EglRuiGridCellColor3 {
+	background-color: lightBlue; 
+}
+.EglRuiGridCellTight {
+	padding: 2px; 
+	border-spacing: 0
+}
+.EglRuiGridHeader {
+	padding: 5px; 
+	border: 1px solid black;
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+.EglRuiGridSorterTd {
+	color: blue;
+	cursor : pointer;
+}
+.EglRuiGridSorterDiv {
+	text-decoration: underline; 
+	white-space:nowrap;
+}
+.EglRuiGridSorterArrayUp {
+	background-image:url("../images/ArrowUp.gif");
+}
+.EglRuiGridSorterArrayDown {
+	background-image:url("../images/ArrowDown.gif");
+}
+
+/*************************** Menu **************************/
+.EglRuiMenuTitleBar {
+	cursor : pointer;
+}
+.EglRuiMenuSimpleText {
+	cursor: pointer;
+	padding: 4px;
+}
+.EglRuiMenuBasicMenuOptionsBox {
+	background-color: #CCC;
+}
+.EglRuiMenuBasicMenuTitlebar {
+	background-color: #CCC;
+	padding-right: 5px;
+}
+.EglRuiMenuContextMenuOptionsBox {
+	background-color: white;
+	border: 2px solid black;
+}
+.EglRuiMenuContextMenuTitlebar {
+	background-color: #CCC;
+}
+.EglRuiMenuOptionHighlight {
+	background-color: #06A;
+}
+.EglRuiMenuOptionUnHighlight {
+	background-color: #CCC;
+}
+.EglRuiMenuMenuUnHighlight {
+	background-color: white;
+}
+
+/*************************** PasswordText **************************/
+.EglRuiPasswordTextField {
+	border: 1px solid #7F9DB9;
+}
+.EglRuiPasswordTextFieldReadOnly {
+	border: 1px solid #7F9DB9;
+	background-color: #C0C0C0;
+}
+
+/*************************** RadioGroup **************************/
+.EglRuiRadioGroupOptionName {
+	margin-right: 3px
+}
+
+/*************************** Shadow*****************************/
+
+.EglRuiShadowDiv1 {
+	background: url(../images/shadowRightTop.png) right top no-repeat;
+	padding-top: 8px;
+}
+
+.EglRuiShadowDiv2 {
+	background: url(../images/shadowLeftBottom.png) left bottom no-repeat;
+	padding-left: 8px;
+}
+
+.EglRuiShadowDiv3 {
+	background: url(../images/shadowRightBottom.png) right bottom no-repeat;
+}
+
+.EglRuiShadowDiv4 {
+	position: relative;
+	top: -8px;
+	left: -8px
+}
+
+/*************************** TextArea *****************************/
+.EglRuiTextArea {
+	border: 1px solid #7F9DB9;
+}
+.EglRuiTextAreaReadOnly {
+	border: 1px solid #7F9DB9;
+	background-color: #C0C0C0;
+}
+
+/*************************** TextField *****************************/
+
+.EglRuiTextField {
+	border: 1px solid #7F9DB9;
+}
+.EglRuiTextFieldReadOnly {
+	border: 1px solid #7F9DB9;
+	background-color: #C0C0C0;
+}
+.EglRuiBIDITextField {
+	border: 1px solid #7F9DB9;
+}
+
+/*************************** Tooltip*****************************/
+
+.EglRuiTooltip {
+	border: 1px solid #7F9DB9;
+	background-color: lightYellow;
+	padding: 3px; 
+	border-style: solid;
+	border-width: 1px;
+	overflow: visible;
+	font-size: small;
+}
+
+/*************************** DataGrid **********************************/
+
+.EglRuiDataGrid {
+	background: white;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.EglRuiDataGridTable {
+	border: 1px solid #769DC0;
+}
+
+.EglRuiDataGridScroller {
+	overflow-y: scroll; 
+}
+
+/*
+ ************************************************
+ *
+ * DataGrid Headers
+ *
+ ************************************************
+*/
+
+.EglRuiDataGridHeaderRow {
+	/*
+ 	 * The next values help to provide a consistent display for the EGL DataGrid. 
+ 	 * You are advised not to change these values. 
+ 	 * However, in case you change them and need to revert to the original, the values are listed here:
+ 	 	overflow: hidden;
+		position: relative;
+		_zoom: 1;
+	 */
+	overflow: hidden;
+	position: relative;
+	_zoom: 1;
+}
+
+.EglRuiDataGridHeaderRow, .EglRuiDataGridHeaderRowInner {
+	background: #ABD6FF;
+}
+
+.EglRuiDataGridHeaderRowInner {
+	overflow: auto;
+}
+	
+.EglRuiDataGridHeaderCell {
+	display: block;
+	border: solid #DDD 1px;
+	border-width: 0 1px 0 0;
+	font-weight: bold;
+	/*
+ 	 * The next values help to provide a consistent display for the EGL DataGrid. 
+ 	 * You are advised not to change these values. 
+ 	 * However, in case you change them and need to revert to the original, the values are listed here:
+ 	 	z-index: 1;
+		white-space: nowrap;
+		overflow: hidden;
+		cursor: pointer;
+		position: relative;
+		float: left;
+	 */
+	z-index: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	float: left;
+}
+
+.EglRuiDataGridHeaderCell span {
+	display: block;
+	height: 1.3em;
+}
+
+.EglRuiDataGridHeaderLabel {
+	overflow: hidden;
+	margin-right: 18px;
+}
+
+.EglRuiDataGridHeaderCell:hover {
+	background-color: #97CBFF;
+}
+
+.EglRuiDataGridResizeHandle {
+	border: 0;
+	line-height: 22px;
+	/*
+ 	 * The next values help to provide a consistent display for the EGL DataGrid. 
+ 	 * You are advised not to change these values. 
+ 	 * However, in case you change them and need to revert to the original, the values are listed here:
+ 	 	width: 6px;
+		position: relative;
+		z-index: 2;
+		left: -3px;
+		float: left;
+		cursor: w-resize;
+	 */
+	width: 6px;
+	position: relative;
+	z-index: 2;
+	left: -3px;
+	float: left;
+	cursor: w-resize;
+}
+.EglRuiDataGridResizeHandle:hover {
+	background: #999 1px 0;
+}
+
+/*
+ ************************************************
+ *
+ * Grid Rows
+ *
+ ************************************************
+*/
+
+.EglRuiDataGridRows {
+	/*
+ 	 * The next values help to provide a consistent display for the EGL DataGrid. 
+ 	 * You are advised not to change these values. 
+ 	 * However, in case you change them and need to revert to the original, the values are listed here:
+ 	 	overflow-y: auto;
+	 */
+	overflow-y: auto;
+}
+
+.EglRuiDataGridEvenRow {
+	background-color: #FAFAFA;
+	_zoom: 1;
+	overflow: hidden;
+}
+
+.EglRuiDataGridOddRow {
+	background-color: white;
+	_zoom: 1;
+	overflow: hidden;
+}
+
+.EglRuiDataGridEmptyRow {
+	background-color: white;
+	_zoom: 1;
+	overflow: hidden;
+}
+
+.EglRuiDataGridOddRow:hover {
+	background-color: #F0F7FF;
+}
+
+.EglRuiDataGridEvenRow:hover {
+ 	background-color: #E8F2FF;
+}
+
+.EglRuiDataGridEndOfRow {
+	clear: both;
+}
+
+/*
+ ************************************************
+ *
+ * Grid CheckBoxes
+ *
+ ************************************************
+*/
+
+.EglRuiDataGridCheckBox {
+	overflow: hidden;
+	height: 1.3em;
+}
+
+
+/*
+ ************************************************
+ *
+ * Grid Cells
+ *
+ ************************************************
+*/
+
+.EglRuiDataGridCell {
+	border: solid #DDD 1px;
+	border-width: 0 1px 0 0;
+	overflow: hidden;
+	min-height: 24px;
+	/*
+ 	 * The next values help to provide a consistent display for the EGL DataGrid. 
+ 	 * You are advised not to change these values. 
+ 	 * However, in case you change them and need to revert to the original, the values are listed here:
+ 	 	cursor: pointer;
+		float: left;
+	 */
+	cursor: pointer;
+	float: left;
+}
+
+.EglRuiDataGridCell input, .EglRuiDataGridCell select {
+	max-width: 100%;
+}
+
+/*
+ ************************************************
+ *
+ * Grid Cell Alignment
+ *
+ ************************************************
+*/
+
+
+.EglRuiDataGridAlignLeft {
+	text-align: left;
+}
+
+.EglRuiDataGridAlignRight {
+	text-align: right;
+}
+
+.EglRuiDataGridAlignCenter {
+	text-align: center;
+}
+
+/*
+ ************************************************
+ *
+ * DataGrid Selection
+ *
+ ************************************************
+*/
+
+.EglRuiDataGridRowSelected {
+	background-color: #FFEBCD;
+}
+.EglRuiDataGridRowSelected .EglRuiDataGridCell {
+	border-width: 0 1px 0 0;
+}
+
+.EglRuiDataGridRowSelected:hover {
+	background-color: #FFEBCD;
+}
+
+
+/*
+ ************************************************
+ *
+ * DataGrid Sorting
+ *
+ ************************************************
+*/
+
+
+.EglRuiDataGridSortUp, .EglRuiDataGridSortDown, .EglRuiDataGridSortNone {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+
+.EglRuiDataGridSortUp {
+	background: url(../images/ArrowUp.gif) no-repeat 4px 4px;
+}
+
+.EglRuiDataGridSortDown {
+	background: url(../images/ArrowDown.gif) no-repeat 4px 4px;
+}
+
+/*
+ ************************************************
+ *
+ * DataGrid Pagination
+ *
+ ************************************************
+*/
+
+
+.EglRuiDataGridButtonBar {
+	padding: 7px 0 7px 7px;
+	/*
+ 	 * The next values help to provide a consistent display for the EGL DataGrid. 
+ 	 * You are advised not to change these values. 
+ 	 * However, in case you change them and need to revert to the original, the values are listed here:
+ 	 	overflow: auto;
+	 */
+	overflow: auto;
+}
+
+.EglRuiDataGridLoadingDiv {
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	background: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*
+ ************************************************
+ *
+ * DataGrid Formatters
+ *
+ ************************************************
+*/
+
+.EglRuiDataGridWhiteCell {
+	background-color: white;	
+}
+
+.EglRuiDataGridGrayCell {
+	background-color: #CCC;	
+}
+
+.EglRuiDataGridCellNegative {
+	color: red;
+}
+
+.EglRuiDataGridCellNull {
+	color: black;
+}
+
+.EglRuiDataGridCellPositive {
+	color: green;
+}
+
+.EglRuiDataGridCellLink {
+
+}
+
+.EglRuiDataGridCellLink:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+/*************************** DataGrid Behavior *****************************/
+
+.EglRuiDataGridCellColor1 {
+	background-color: lightGrey;
+	color: darkGreen;
+}
+.EglRuiDataGridCellColor2 {
+	background-color: white; 
+}
+.EglRuiDataGridCellColor3 {
+	background-color: lightBlue; 
+}
+.EglRuiDataGridCellTight {
+	padding: 2px; 
+	border-spacing: 0;
+	min-height: 0;
+}

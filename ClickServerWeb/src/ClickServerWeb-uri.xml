@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servicemappings>
+  <servicemapping classname="com.pku.ss.egl.server.PlayerService">
+    <uri httpmethod="POST">/PlayerService</uri>
+  </servicemapping>
+  <servicemapping classname="com.pku.ss.egl.server.RunCmdService">
+    <uri httpmethod="POST">/RunCmdService</uri>
+  </servicemapping>
+  <contextroot>/ClickServerWeb/restservices</contextroot>
+</servicemappings>

@@ -1,0 +1,10 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ExternalType ID="1" eClass="org.eclipse.edt.mof.egl.ExternalType" name="Serializable" fileName="com/pku/ss/egl/et/Monitor.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.et" isAbstract="false" >
+	<annotations ID="2" eClass="egl:eglx.java.javaobject" packageName="java.io" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:98" off="i:225" line="i:15" />
+	<superTypes href="egl:eglx.java.object"/>
+	<constructors ID="4" eClass="org.eclipse.edt.mof.egl.Constructor" name="constructor" type="egl:com.pku.ss.egl.et.serializable" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:22" off="i:297" line="i:17" />
+		<container IDREF="1"/>
+	</constructors>
+</ExternalType>

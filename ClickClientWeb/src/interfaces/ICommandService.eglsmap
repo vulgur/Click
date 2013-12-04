@@ -1,0 +1,14 @@
+SMAP
+ICommandService.java
+egl
+*S egl
+*F
++ 1 ICommandService.egl
+interfaces/ICommandService.egl
+*L
+10#1:31
+*E
+7#1;uri;uri;eglx.lang.EString
+10#1;F:sendCmd;sendCmd;(Ljava/lang/String;)Ljava/lang/String;
+10#1;cmd;cmd;eglx.lang.EString
+*X

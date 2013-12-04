@@ -1,0 +1,48 @@
+package libs;
+
+// basic library
+
+library CommandLib
+
+    function playMusic(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function playVideo(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function switchDisplay(value boolean){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function changeVolume(value int){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function logOff(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function shutDown(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function sleep(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function hibernate(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function forwardCmd(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function backwardCmd(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function reboot(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function lock(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function left(){@EglService{serviceName = "RunCmdService"}}
+    end
+
+    function right(){@EglService{serviceName = "RunCmdService"}}
+    end
+end

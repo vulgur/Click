@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Library ID="1" eClass="org.eclipse.edt.mof.egl.Library" name="SoundControllerLib" fileName="com/pku/ss/egl/libs/SoundControllerLib.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.libs" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:143" off="i:75" line="i:5" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.egl.Function" name="setVolume" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:74" off="i:139" line="i:9" />
+		<container IDREF="1"/>
+		<parameters ID="5" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="value" type="egl:eglx.lang.eint" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_IN" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="6" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:12" off="i:158" line="i:9" />
+			<container IDREF="3"/>
+		</parameters>
+		<statementBlock ID="7" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+			<statements ID="8" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+				<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:25" off="i:180" line="i:10" />
+				<container IDREF="3"/>
+				<expr ID="10" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="setVolumeValue" >
+					<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:24" off="i:180" line="i:10" />
+					<arguments ID="12" eClass="org.eclipse.edt.mof.egl.MemberName" id="value" >
+						<annotations ID="13" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:5" off="i:198" line="i:10" />
+						<member IDREF="5"/>
+					</arguments>
+					<qualifier ID="14" eClass="org.eclipse.edt.mof.egl.MemberName" id="sc" >
+						<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:2" off="i:180" line="i:10" />
+						<member IDREF="16"/>
+					</qualifier>
+				</expr>
+			</statements>
+		</statementBlock>
+	</functions>
+	<fields ID="16" eClass="org.eclipse.edt.mof.egl.Field" name="sc" type="egl:com.pku.ss.egl.et.soundcontrol" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" hasSetValuesBlock="false" isImplicit="false" isSystemField="false" >
+		<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:26" off="i:107" line="i:7" />
+		<container IDREF="1"/>
+	</fields>
+</Library>

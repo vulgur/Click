@@ -1,0 +1,1 @@
+define({"group":",","percentSign":"%","exponential":"E","scientificFormat":"#E0","percentFormat":"#,##0%","list":";","infinity":"\u221e","patternDigit":"#","minusSign":"-","decimal":".","nan":"NaN","nativeZeroDigit":"0","perMille":"\u2030","decimalFormat":"#,##0.###","currencyFormat":"\xa4#,##0.00;\xa4-#,##0.00","plusSign":"+"});

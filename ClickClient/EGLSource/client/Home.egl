@@ -1,0 +1,170 @@
+package client;
+
+// RUI Handler
+
+import org.eclipse.edt.rui.widgets.GridLayout;
+import dojo.mobile.widgets.DojoMobileView;
+import org.eclipse.edt.rui.widgets.GridLayoutData;
+import dojo.mobile.widgets.DojoMobileButton;
+import dojo.mobile.widgets.DojoMobileSlider;
+import dojo.mobile.widgets.DojoMobileOpener;
+import org.eclipse.edt.rui.widgets.GridLayoutLib;
+import libs.CommandLib;
+import dojo.mobile.widgets.DojoMobileTabContainer;
+import dojo.mobile.widgets.DojoMobileTab;
+import dojo.mobile.widgets.DojoMobileIconContainer;
+import dojo.mobile.widgets.DojoMobileIconItem;
+import org.eclipse.edt.rui.widgets.Box;
+import org.eclipse.edt.rui.widgets.TextLabel;
+import org.eclipse.edt.rui.widgets.BoxLib;
+import dojo.mobile.widgets.DojoMobileSwitch;
+//
+//
+
+handler Home type RUIhandler{initialUI =[ui
+            ], onConstructionFunction = start, cssFile = "css/ClickClient.css", title = "Home"}
+
+    ui GridLayout{columns = 1, rows =8, cellPadding = 1, children =[view
+            ], width = "100%"};
+    View DojoMobileView{layoutData = new GridLayoutData{row = 2, column = 1, horizontalAlignment = GridLayoutLib.ALIGN_CENTER}, selected = true, headerTitle = "Click",
+            /*backText = "Back", backView = */ children =[TabContainer] };
+     
+    TabContainer DojoMobileTabContainer{layoutData = new GridLayoutData{row = 2, column = 1}, selection = 1, segmentedControl = true, children =[
+                    new DojoMobileTab{title = "Volume", /*deSelectedIcon = "dojo/mobile/images/tab-icon-10.png", selectedIcon = "dojo/mobile/images/tab-icon-10h.png",*/ children =[vBox
+                            ], width="75px"},
+                            new DojoMobileTab{title = "Display", /*deSelectedIcon = "dojo/mobile/images/tab-icon-10.png", selectedIcon = "dojo/mobile/images/tab-icon-10h.png",*/ children =[dBox
+                            ], width="75px"},
+                    new DojoMobileTab{title = "Power", /*deSelectedIcon = "dojo/mobile/images/tab-icon-10.png", selectedIcon = "dojo/mobile/images/tab-icon-10h.png",*/ children =[powerIconContainer
+                            ], width="75px"},
+                    new DojoMobileTab{title = "Hotkeys", /*deSelectedIcon = "dojo/mobile/images/tab-icon-10.png", selectedIcon = "dojo/mobile/images/tab-icon-10h.png",*/ children =[hotkyesIconContainer
+                            ], width="75px"}]};
+    powerIconContainer DojoMobileIconContainer{layoutData = new GridLayoutData{row = 4, column = 1}, children =[
+                    new DojoMobileIconItem{imagePath = "icons/lock.png", text = "Lock", onClick ::= lock_onClick},
+                    //                    new DojoMobileIconItem{imagePath = "dojo/mobile/images/icon-1.png", text = "Sleep", onClick ::= sleep_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/logoff.png", text = "Log Off", onClick ::= logOff_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/hibernate.png", text = "Hibernate", onClick ::= hibernate_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/reboot.png", text = "Reboot", onClick ::= reboot_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/shut.png", text = "Shut Down", onClick ::= shutDown_onClick}
+            ]};
+
+    hotkyesIconContainer DojoMobileIconContainer{layoutData = new GridLayoutData{row = 4, column = 1}, children =[
+                    new DojoMobileIconItem{imagePath = "icons/back.png", text = "Backward", onClick ::= backward_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/forward.png", text = "Forward", onClick ::= forward_onClick},
+
+                    new DojoMobileIconItem{imagePath = "icons/left.png", text = "Left Key", onClick ::= left_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/right.png", text = "Right Key", onClick ::= right_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/music.png", text = "Play Music", onClick ::= playMusic_onClick},
+                    new DojoMobileIconItem{imagePath = "icons/video.png", text = "Play Video", onClick ::= playVideo_onClick}
+            ]};
+
+    soundSlider DojoMobileSlider{onChange ::= soundSlider_onChange};
+    vBox Box{layoutData = new GridLayoutData{row = 2, column = 1}, padding = 8, columns = 1, children =[
+                    soundTextlabel, soundSlider], alignment = BoxLib.ALIGN_CENTER};
+                        dBox Box{layoutData = new GridLayoutData{row = 2, column = 1}, padding = 8, columns = 1, children =[
+                   displayTextLabel,
+                    displaySwitch], alignment = BoxLib.ALIGN_CENTER};
+    soundTextlabel TextLabel{text = "Volume"};
+    displayTextLabel TextLabel{text = "Display"};
+    displaySwitch DojoMobileSwitch{onText = "On", offText = "Off", onChange ::= displaySwitch_onChange, value = true};
+
+    //use CommandLib;
+    
+    function start()
+        displaySwitch.setValue(true);
+        soundSlider.setValue(50);
+    end
+
+    myBindingVar IHttp? = Resources.getResource("binding:RunCmdService");
+//    playerBinding IHttp? = Resources.getResource("binding:PlayerService");
+
+    function handleSliderResults(value int in)
+    end
+
+    function handleResults()
+    //   		SysLib.writeStdout("Notepad was opened"); 	
+    end
+
+    function handleError(e AnyException in)
+        SysLib.writeStderr(e.message);
+    end
+
+    function displaySwitch_onChange(switchEvent Event in)
+    //switch DojoMobileSwitch = switchEvent.widget;
+    //syslib.writeStdout(displaySwitch.value);
+    state boolean = displaySwitch.value;
+        call CommandLib.switchDisplay(state) using myBindingVar
+                returning to handleSwitchResults onException handleError;
+    end
+
+    function handleSwitchResults(value boolean in)
+    end
+
+    function soundSlider_onChange(event Event in)
+        slider DojoMobileSlider = event.widget;
+        call CommandLib.changeVolume(slider.value) using myBindingVar
+                returning to handleSliderResults onException handleError;
+    end
+
+    function backward_onClick(event Event in)
+        call CommandLib.backwardCmd() using myBindingVar
+                returning to handleResults onException handleError;
+    end
+
+    function forward_onClick(event Event in)
+        call CommandLib.forwardCmd() using myBindingVar
+                returning to handleResults onException handleError;
+    end
+
+    function left_onClick(event Event in)
+        call CommandLib.left() using myBindingVar returning to handleResults
+                onException handleError;
+    end
+
+    function right_onClick(event Event in)
+    	icon DojoMobileIconItem = event.widget;
+
+        call CommandLib.right() using myBindingVar returning to handleResults
+                onException handleError;
+  
+    end
+
+    //    function sleep_onClick(e Event in)
+    //        call CommandLib.sleep() using myBindingVar returning to handleResults
+    //                onException handleError;
+    //    end
+    
+    function lock_onClick(e Event in)
+        call CommandLib.lock() using myBindingVar returning to handleResults
+                onException handleError;
+    end
+
+    function logOff_onClick(e Event in)
+        call CommandLib.logOff() using myBindingVar returning to handleResults
+                onException handleError;
+    end
+
+    function hibernate_onClick(e Event in)
+        call CommandLib.hibernate() using myBindingVar
+                returning to handleResults onException handleError;
+    end
+
+    function reboot_onClick(e Event in)
+        call CommandLib.reboot() using myBindingVar returning to handleResults
+                onException handleError;
+    end
+
+    function shutDown_onClick(e Event in)
+        call CommandLib.shutDown() using myBindingVar
+                returning to handleResults onException handleError;
+    end
+
+    function playMusic_onClick(e Event in)
+        call CommandLib.playMusic() using myBindingVar
+                returning to handleResults onException handleError;
+    end
+
+    function playVideo_onClick(e Event in)
+        call CommandLib.playVideo() using myBindingVar
+                returning to handleResults onException handleError;
+    end
+end

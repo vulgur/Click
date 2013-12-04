@@ -1,0 +1,25 @@
+package com.pku.ss.egl.et;
+
+
+externalType BootComputer extends Serializable type JavaObject
+
+    constructor();
+
+    static function getInstance() returns(BootComputer?);
+
+    function hibernate();
+
+    function lock();
+
+    function logOff();
+
+    function reboot();
+
+    function shutDown();
+
+    function sleep();
+
+    function switchBoot(arg0 int in);
+end
+
+

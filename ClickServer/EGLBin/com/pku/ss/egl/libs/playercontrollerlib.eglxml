@@ -1,0 +1,124 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Library ID="1" eClass="org.eclipse.edt.mof.egl.Library" name="PlayerControllerLib" fileName="com/pku/ss/egl/libs/PlayerControllerLib.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.libs" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:595" off="i:76" line="i:6" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.egl.Function" name="PlayMusic" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:204" off="i:299" line="i:18" />
+		<container IDREF="1"/>
+		<statementBlock ID="5" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+			<statements ID="6" eClass="org.eclipse.edt.mof.egl.TryStatement" >
+				<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:166" off="i:328" line="i:19" />
+				<container IDREF="3"/>
+				<tryBlock ID="8" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:166" off="i:328" line="i:19" />
+					<container IDREF="3"/>
+					<statements ID="10" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:344" line="i:20" />
+						<container IDREF="3"/>
+						<expr ID="12" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="playMusic" >
+							<annotations ID="13" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:344" line="i:20" />
+							<qualifier ID="14" eClass="org.eclipse.edt.mof.egl.PartName" id="Player" packageName="com.pku.ss.egl.et" >
+								<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:344" line="i:20" />
+							</qualifier>
+						</expr>
+					</statements>
+				</tryBlock>
+				<exceptionBlocks ID="16" eClass="org.eclipse.edt.mof.egl.ExceptionBlock" >
+					<annotations ID="17" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:115" off="i:367" line="i:21" />
+					<container IDREF="3"/>
+					<statements ID="18" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:32" off="i:407" line="i:22" />
+						<container IDREF="3"/>
+						<expr ID="20" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:31" off="i:407" line="i:22" />
+							<arguments ID="22" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="messageID" >
+								<annotations ID="23" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:426" line="i:22" />
+								<qualifier ID="24" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="25" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:426" line="i:22" />
+									<member IDREF="26"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="27" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="28" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:407" line="i:22" />
+							</qualifier>
+						</expr>
+					</statements>
+					<statements ID="29" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="30" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:452" line="i:23" />
+						<container IDREF="3"/>
+						<expr ID="31" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="32" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:452" line="i:23" />
+							<arguments ID="33" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="message" >
+								<annotations ID="34" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:471" line="i:23" />
+								<qualifier ID="35" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="36" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:471" line="i:23" />
+									<member IDREF="26"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="37" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="38" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:452" line="i:23" />
+							</qualifier>
+						</expr>
+					</statements>
+					<exception ID="26" eClass="org.eclipse.edt.mof.egl.Parameter" name="e" type="egl:eglx.lang.anyexception" isNullable="false" isStatic="false" isAbstract="false" >
+						<annotations ID="39" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:379" line="i:21" />
+					</exception>
+				</exceptionBlocks>
+			</statements>
+		</statementBlock>
+	</functions>
+	<functions ID="40" eClass="org.eclipse.edt.mof.egl.Function" name="PlayVideo" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="41" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:158" off="i:509" line="i:28" />
+		<container IDREF="1"/>
+		<statementBlock ID="42" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="40"/>
+			<statements ID="43" eClass="org.eclipse.edt.mof.egl.TryStatement" >
+				<annotations ID="44" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:121" off="i:538" line="i:29" />
+				<container IDREF="40"/>
+				<tryBlock ID="45" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+					<annotations ID="46" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:121" off="i:538" line="i:29" />
+					<container IDREF="40"/>
+					<statements ID="47" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="48" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:554" line="i:30" />
+						<container IDREF="40"/>
+						<expr ID="49" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="playVideo" >
+							<annotations ID="50" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:554" line="i:30" />
+							<qualifier ID="51" eClass="org.eclipse.edt.mof.egl.PartName" id="Player" packageName="com.pku.ss.egl.et" >
+								<annotations ID="52" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:11" off="i:554" line="i:30" />
+							</qualifier>
+						</expr>
+					</statements>
+				</tryBlock>
+				<exceptionBlocks ID="53" eClass="org.eclipse.edt.mof.egl.ExceptionBlock" >
+					<annotations ID="54" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:70" off="i:577" line="i:31" />
+					<container IDREF="40"/>
+					<statements ID="55" eClass="org.eclipse.edt.mof.egl.FunctionStatement" >
+						<annotations ID="56" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:30" off="i:617" line="i:32" />
+						<container IDREF="40"/>
+						<expr ID="57" eClass="org.eclipse.edt.mof.egl.QualifiedFunctionInvocation" id="writeStderr" >
+							<annotations ID="58" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:29" off="i:617" line="i:32" />
+							<arguments ID="59" eClass="org.eclipse.edt.mof.egl.MemberAccess" id="message" >
+								<annotations ID="60" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:636" line="i:32" />
+								<qualifier ID="61" eClass="org.eclipse.edt.mof.egl.MemberName" id="e" >
+									<annotations ID="62" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:636" line="i:32" />
+									<member IDREF="63"/>
+								</qualifier>
+							</arguments>
+							<qualifier ID="64" eClass="org.eclipse.edt.mof.egl.PartName" id="SysLib" packageName="eglx.lang" >
+								<annotations ID="65" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:18" off="i:617" line="i:32" />
+							</qualifier>
+						</expr>
+					</statements>
+					<exception ID="63" eClass="org.eclipse.edt.mof.egl.Parameter" name="e" type="egl:eglx.lang.anyexception" isNullable="false" isStatic="false" isAbstract="false" >
+						<annotations ID="66" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1" off="i:589" line="i:31" />
+					</exception>
+				</exceptionBlocks>
+			</statements>
+		</statementBlock>
+	</functions>
+	<fields ID="67" eClass="org.eclipse.edt.mof.egl.Field" name="p" type="egl:com.pku.ss.egl.et.player" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" hasSetValuesBlock="false" isImplicit="false" isSystemField="false" >
+		<annotations ID="68" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:19" off="i:109" line="i:8" />
+		<container IDREF="1"/>
+	</fields>
+</Library>

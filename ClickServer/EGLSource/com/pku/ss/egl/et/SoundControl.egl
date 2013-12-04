@@ -1,0 +1,10 @@
+package com.pku.ss.egl.et;
+
+externalType SoundControl type JavaObject{PackageName = "com.pku.ss.egl.et"}
+
+    constructor();
+    static function getInstance() returns(SoundControl?);
+    
+    function setVolumeValue(value bigint in);
+    
+end

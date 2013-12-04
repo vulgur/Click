@@ -1,0 +1,125 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Library ID="1" eClass="org.eclipse.edt.mof.egl.Library" name="CommandLib" fileName="libs/CommandLib.egl" hasCompileErrors="false" packageName="libs" isAbstract="false" >
+	<annotations ID="2" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:1121" off="i:33" line="i:5" />
+	<superTypes href="egl:eglx.lang.eany"/>
+	<functions ID="3" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="playMusic" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="4" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:72" off="i:57" line="i:7" />
+		<container IDREF="1"/>
+		<statementBlock ID="6" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="3"/>
+		</statementBlock>
+	</functions>
+	<functions ID="7" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="playVideo" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="8" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:72" off="i:135" line="i:10" />
+		<container IDREF="1"/>
+		<statementBlock ID="10" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="7"/>
+		</statementBlock>
+	</functions>
+	<functions ID="11" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="switchDisplay" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="12" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="13" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:89" off="i:213" line="i:13" />
+		<container IDREF="1"/>
+		<parameters ID="14" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="value" type="egl:eglx.lang.eboolean" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_INOUT" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="15" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:13" off="i:236" line="i:13" />
+			<container IDREF="11"/>
+		</parameters>
+		<statementBlock ID="16" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="11"/>
+		</statementBlock>
+	</functions>
+	<functions ID="17" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="changeVolume" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="18" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="19" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:84" off="i:308" line="i:16" />
+		<container IDREF="1"/>
+		<parameters ID="20" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="value" type="egl:eglx.lang.eint" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_INOUT" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="21" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:9" off="i:330" line="i:16" />
+			<container IDREF="17"/>
+		</parameters>
+		<statementBlock ID="22" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="17"/>
+		</statementBlock>
+	</functions>
+	<functions ID="23" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="logOff" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="24" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="25" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:69" off="i:398" line="i:19" />
+		<container IDREF="1"/>
+		<statementBlock ID="26" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="23"/>
+		</statementBlock>
+	</functions>
+	<functions ID="27" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="shutDown" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="28" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="29" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:71" off="i:473" line="i:22" />
+		<container IDREF="1"/>
+		<statementBlock ID="30" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="27"/>
+		</statementBlock>
+	</functions>
+	<functions ID="31" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="sleep" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="32" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="33" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:68" off="i:550" line="i:25" />
+		<container IDREF="1"/>
+		<statementBlock ID="34" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="31"/>
+		</statementBlock>
+	</functions>
+	<functions ID="35" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="hibernate" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="36" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="37" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:72" off="i:624" line="i:28" />
+		<container IDREF="1"/>
+		<statementBlock ID="38" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="35"/>
+		</statementBlock>
+	</functions>
+	<functions ID="39" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="forwardCmd" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="40" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="41" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:73" off="i:702" line="i:31" />
+		<container IDREF="1"/>
+		<statementBlock ID="42" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="39"/>
+		</statementBlock>
+	</functions>
+	<functions ID="43" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="backwardCmd" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="44" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="45" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:74" off="i:781" line="i:34" />
+		<container IDREF="1"/>
+		<statementBlock ID="46" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="43"/>
+		</statementBlock>
+	</functions>
+	<functions ID="47" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="reboot" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="48" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="49" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:69" off="i:861" line="i:37" />
+		<container IDREF="1"/>
+		<statementBlock ID="50" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="47"/>
+		</statementBlock>
+	</functions>
+	<functions ID="51" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="lock" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="52" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="53" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:67" off="i:936" line="i:40" />
+		<container IDREF="1"/>
+		<statementBlock ID="54" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="51"/>
+		</statementBlock>
+	</functions>
+	<functions ID="55" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="left" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="56" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="57" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:67" off="i:1009" line="i:43" />
+		<container IDREF="1"/>
+		<statementBlock ID="58" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="55"/>
+		</statementBlock>
+	</functions>
+	<functions ID="59" eClass="org.eclipse.edt.mof.eglx.services.ServiceFunction" name="right" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="60" eClass="egl:eglx.rest.eglservice" serviceName="RunCmdService" requestCharset="UTF-8" />
+		<annotations ID="61" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:68" off="i:1082" line="i:46" />
+		<container IDREF="1"/>
+		<statementBlock ID="62" eClass="org.eclipse.edt.mof.egl.StatementBlock" >
+			<container IDREF="59"/>
+		</statementBlock>
+	</functions>
+</Library>

@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ExternalType ID="1" eClass="org.eclipse.edt.mof.egl.ExternalType" name="SoundControl" fileName="com/pku/ss/egl/et/SoundControl.egl" hasCompileErrors="false" packageName="com.pku.ss.egl.et" isAbstract="false" >
+	<annotations ID="2" eClass="egl:eglx.java.javaobject" packageName="com.pku.ss.egl.et" />
+	<annotations ID="3" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:214" off="i:28" line="i:3" />
+	<superTypes href="egl:eglx.java.object"/>
+	<constructors ID="4" eClass="org.eclipse.edt.mof.egl.Constructor" name="constructor" type="egl:com.pku.ss.egl.et.soundcontrol" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="5" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:14" off="i:110" line="i:5" />
+		<container IDREF="1"/>
+	</constructors>
+	<functions ID="6" eClass="org.eclipse.edt.mof.egl.Function" name="getInstance" type="egl:com.pku.ss.egl.et.soundcontrol" isNullable="true" isStatic="true" isAbstract="false" >
+		<annotations ID="7" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:53" off="i:129" line="i:6" />
+		<container IDREF="1"/>
+	</functions>
+	<functions ID="8" eClass="org.eclipse.edt.mof.egl.Function" name="setVolumeValue" isNullable="false" isStatic="false" isAbstract="false" >
+		<annotations ID="9" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:41" off="i:192" line="i:8" />
+		<container IDREF="1"/>
+		<parameters ID="10" eClass="org.eclipse.edt.mof.egl.FunctionParameter" name="value" type="egl:eglx.lang.ebigint" isNullable="false" isStatic="false" isAbstract="false" accessKind="ACC_PRIVATE" parameterKind="PARM_IN" isDefinedSqlNullable="false" isField="false" isConst="false" >
+			<annotations ID="11" eClass="dynMof:org.eclipse.edt.mof.egl.Annotation:EGL_Location" len="i:15" off="i:216" line="i:8" />
+			<container IDREF="8"/>
+		</parameters>
+	</functions>
+</ExternalType>

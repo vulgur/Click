@@ -1,0 +1,1 @@
+egl.defineClass("eglx.rest","ServiceType","eglx.lang","Enumeration",{"constructor":function(_1){this.value=_1;}});egl.eglx.rest.ServiceType["TrueRest"]=new egl.eglx.rest.ServiceType(1);egl.eglx.rest.ServiceType["EglRpc"]=new egl.eglx.rest.ServiceType(2);egl.eglx.rest.ServiceType["EglDedicated"]=new egl.eglx.rest.ServiceType(3);

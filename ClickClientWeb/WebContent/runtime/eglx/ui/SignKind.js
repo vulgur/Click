@@ -1,0 +1,1 @@
+egl.defineClass("eglx.ui","SignKind","eglx.lang","Enumeration",{"constructor":function(_1){this.value=_1;}});egl.eglx.ui.SignKind["leading"]=new egl.eglx.ui.SignKind(1);egl.eglx.ui.SignKind["none"]=new egl.eglx.ui.SignKind(2);egl.eglx.ui.SignKind["parens"]=new egl.eglx.ui.SignKind(3);egl.eglx.ui.SignKind["trailing"]=new egl.eglx.ui.SignKind(4);

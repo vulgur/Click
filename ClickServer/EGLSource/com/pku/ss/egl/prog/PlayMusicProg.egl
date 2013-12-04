@@ -1,0 +1,12 @@
+package com.pku.ss.egl.prog;
+import com.pku.ss.egl.libs.*;
+// program
+//
+
+program PlayMusicProg type BasicProgram
+
+    function main()
+        PlayerControllerLib.PlayMusic();
+    end
+
+end

@@ -1,0 +1,27 @@
+<project default="Enable Andriod EGL Deployment">
+	<target name="Enable Andriod EGL Deployment">
+		<property name="SourceWebProject" value="ClickClientWeb" />
+		<property name="TargetProject" value="ClickMobile" />
+		<property name="MainPageName" value="Home.html" />
+		<property name="ServerAddress" value="192.168.1.105:8080" />
+		
+		<echo>Copying all modules (*.html, .css and *.js) from the web project.</echo>
+		<copy overwrite="true" todir="../${TargetProject}/assets/www/">
+			<fileset dir="../${SourceWebProject}/WebContent">
+				  <include name="**/*.js" />
+				  <include name="**/*.html" />
+				  <include name="**/*.properties" />
+				  <include name="**/*.css" />
+				  <include name="**/*.png" />
+				  <include name="**/*.gif" />				
+			</fileset>
+		</copy>
+
+		<move file="../${TargetProject}/assets/www/${MainPageName}" tofile="../${TargetProject}/assets/www/index.html"/>
+		
+		<replace file="../${TargetProject}/assets/www/runtime/edt_core.js" token="egl__contextRoot=_1"  value="egl__contextRoot=&quot;http://${ServerAddress}/${SourceWebProject}&quot;" />
+		<replace file="../${TargetProject}/assets/www/runtime/edt_runtime_all.js" token="&quot;/&quot;+egl.contextRoot+&quot;/&quot;"  value="egl.contextRoot+&quot;/&quot;" />
+		<replace file="../${TargetProject}/assets/www/runtime/edt_runtime_all.js" token="xhr.setRequestHeader(&quot;Content-Length"  value="xhr.setRequestHeader(&quot;Content-Length-Disabled" />
+		
+	</target>
+</project>

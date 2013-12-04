@@ -1,0 +1,1 @@
+egl.defineClass("org.eclipse.edt.eunit.runtime","targetLangKind","eglx.lang","Enumeration",{"constructor":function(_1){this.value=_1;}});egl.org.eclipse.edt.eunit.runtime.targetLangKind["JAVA"]=new egl.org.eclipse.edt.eunit.runtime.targetLangKind(1);egl.org.eclipse.edt.eunit.runtime.targetLangKind["JAVASCRIPT"]=new egl.org.eclipse.edt.eunit.runtime.targetLangKind(2);
